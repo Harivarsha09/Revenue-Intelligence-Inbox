@@ -1,0 +1,12 @@
+{
+  "name": "revenue-intelligence-inbox",
+  "version": "1.0.0",
+  "description": "Revenue Intelligence Inbox - zero-dependency Node app (no npm install needed)",
+  "scripts": {
+    "start": "node server.js",
+    "replay": "node scripts/replay.js",
+    "seal": "node scripts/seal-analysis.js",
+    "reset": "node scripts/reset.js"
+  },
+  "engines": { "node": ">=18" }
+}

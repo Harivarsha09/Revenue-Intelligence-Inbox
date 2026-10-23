@@ -1,0 +1,51 @@
+{
+ "source_type": "call",
+ "source_id": "bcdcbf56-d338-5c78-9a97-42c2fc1c9931",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "deal"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "deal"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/deal/C04__bcdcbf56__next-steps.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "bcdcbf56-d338-5c78-9a97-42c2fc1c9931",
+  "external_call_id": "EXT-00024",
+  "workspace_slug": "workspace-01",
+  "rep_email": "arun@example.com",
+  "rep_name": "Arun",
+  "rep_user_id": "be3ed75a-8e5c-5545-ad7f-986d9d7b0821",
+  "direction": "outbound",
+  "direction_raw": "outbound",
+  "from_number": "PHONE-001",
+  "to_number": "PHONE-023",
+  "started_at": "2026-08-21T14:22:29Z",
+  "duration_seconds": 95,
+  "talk_time_seconds": 95,
+  "speaker_count": 2,
+  "segment_count": 8,
+  "is_connected": false,
+  "is_conversation": false,
+  "observed_outcome": "voicemail",
+  "classification_reason": null,
+  "classification_status": "stored",
+  "is_campaign_call": false,
+  "first_dial_ever": true,
+  "first_connect_ever": true,
+  "prior_dials_ever": 0,
+  "prior_connects_ever": 0,
+  "summary": null,
+  "summary_status": "stored",
+  "transcript": "Please record your name and the purpose of your call so the recipient can decide whether to answer. Arun from SpendNest, following up on our earlier conversation about expense software for Lanternpath Media. Thank you. Please hold. The person you called is unavailable. You may leave a further message after the signal. Hello, this is a message for Ritesh. Arun from SpendNest here. I'm following up on your consideration of our expense platform for Lanternpath Media. My understanding is that our information first went to the wrong email address. We subsequently used the corrected address you gave us, and I hope you have now had a chance to see it. Please call me back to let me know where things stand. If you've decided whether to move forward, or if there are questions we can answer to help you decide, I'd be happy to discuss them. You can reach me on [phone withheld]. I hope to hear from you when you have an update. Thank you."
+ },
+ "source_transcript_payload": null
+}

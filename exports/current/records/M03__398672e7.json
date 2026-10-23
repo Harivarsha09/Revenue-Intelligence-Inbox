@@ -1,0 +1,264 @@
+{
+ "source_type": "meeting",
+ "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "deal",
+  "coaching"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "deal",
+  "coaching"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/deal/M03__398672e7__next-steps.md",
+  "routes/coaching/M03__398672e7__coaching.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "398672e7-62dd-5afd-846d-0237d49792fb",
+  "title": "Asterloom Systems / SpendNest discussion",
+  "starts_at": "2026-08-21T09:30:00Z",
+  "ends_at": "2026-08-21T10:00:00Z",
+  "duration_seconds": 2958,
+  "provider": "google_meet",
+  "join_url": "https://meet.example.invalid/398672e7-62dd-5afd-846d-0237d49792fb",
+  "organizer_email": "team08@example.com",
+  "attendee_count": 1,
+  "recording_status": "recorded",
+  "recording_detail": null,
+  "recording_id": "d72e775d-851f-55fc-ad23-ad0464ca382c",
+  "has_transcript": true,
+  "has_video": true,
+  "summary": null,
+  "summary_status": "stored",
+  "redacted": true
+ },
+ "source_transcript_payload": {
+  "meeting_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+  "turns": [
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 169.04645,
+    "timecode": "00:02:49",
+    "text": "We spoke a while ago. My finance colleague is joining today because we need to understand how this would actually work, and then revisit the price."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 263.30264,
+    "timecode": "00:04:23",
+    "text": "SpendNest can handle corporate cards, employee payments and accounting integration. I understand travel and smaller operating expenses are the immediate use case. Before the demonstration, what would you particularly like to see?"
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 364.40955,
+    "timecode": "00:06:04",
+    "text": "Cards first. Our overseas team already has a provider they like. Here we reimburse employees through an existing expense portal with approvals. Show us how introducing your cards fits that process; we are not currently shopping for vendor payments."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 454.01196,
+    "timecode": "00:07:34",
+    "text": "The domestic cards are prepaid. The business funds a shared wallet, invites employees and sets card limits after identity checks. You can see transactions and receipts in the dashboard."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 604.3007,
+    "timecode": "00:10:04",
+    "text": "At present employees spend personally and we reimburse them. Monthly spending might be around INR 10–13 lakh, but that needs checking. First we need to establish whether the workflow fits."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 664.47815,
+    "timecode": "00:11:04",
+    "text": "Wait, these are prepaid? I had thought about a corporate credit card. So we put money in before anyone spends, and there is no credit facility on these domestic cards?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 687.026,
+    "timecode": "00:11:27",
+    "text": "That is right for this option. The money is in the company wallet and the card transactions draw against it."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 712.5195,
+    "timecode": "00:11:52",
+    "text": "If I load INR 6.5 lakh, everyone draws from that pool, subject to the limits we give them? A person travelling more does not need a separate deposit tied to their card?"
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 775.4641,
+    "timecode": "00:12:55",
+    "text": "Please show the expense approval part. I am not asking about approving a card limit. Today an employee submits an expense report, it passes through our approval levels, and only then is it paid. We still need the accounting discipline after issuing cards."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 845.01196,
+    "timecode": "00:14:05",
+    "text": "With a company card they are no longer paying personally, so there is no reimbursement request unless they have had to pay another way."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 887.38275,
+    "timecode": "00:14:47",
+    "text": "Yes, but that does not remove our need to review the spending. We do not want to inspect unexplained transactions one at a time. People still need to explain the business purpose and provide evidence."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 946.17096,
+    "timecode": "00:15:46",
+    "text": "You can require a receipt and a memo. Missing evidence remains visible against the transaction. The employee uploads from the app or web, and the approver can inspect the details."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 1120.4639,
+    "timecode": "00:18:40",
+    "text": "Take one transaction through the whole flow. The employee spends, uploads the receipt, and then what happens? Does it actually come to someone for approval?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1135.6069,
+    "timecode": "00:18:55",
+    "text": "It appears in the review section. The money has already been spent, but the reviewer can approve or flag the transaction and check the evidence."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1207.6876,
+    "timecode": "00:20:07",
+    "text": "That is closer to what we use elsewhere. After that approval, we want the item to reach our accounting system for reconciliation."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1300.8143,
+    "timecode": "00:21:40",
+    "text": "You can select transactions and sync them. If you need automatic syncing after approval, that is something we can build. I am showing the current manual selection here; the automatic flow would need that additional work."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1404.3799,
+    "timecode": "00:23:24",
+    "text": "Then we should still be able to distinguish recorded spending from spending with completed review. Otherwise we lose visibility into what is outstanding."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 1499.5862,
+    "timecode": "00:24:59",
+    "text": "And setting a limit does not lock that exact amount away for one employee? Okay, so it is a spending control and the balance stays shared. The funding transfer itself is something we initiate."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1621.2118,
+    "timecode": "00:27:01",
+    "text": "We are happy with the existing overseas provider. Virtual cards for a specific team activity have worked well there. I am not asking to replace that arrangement now."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1708.9944,
+    "timecode": "00:28:28",
+    "text": "For spending outside India, these domestic cards would not be the solution. There is a separate bank-issued international credit-card route with eligibility requirements. Let us keep that separate from the domestic option we are discussing."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1775.7596,
+    "timecode": "00:29:35",
+    "text": "For the domestic option, what is the minimum spend and what does the fee depend on?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1799.1205,
+    "timecode": "00:29:59",
+    "text": "There is no minimum spending requirement. In the first monthly spending band, up to INR 13 lakh, the annual charge for the cards arrangement would be INR 39,000 plus tax."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1841.5702,
+    "timecode": "00:30:41",
+    "text": "But you previously told me INR 26,000. Why has that become INR 39,000?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1843.8185,
+    "timecode": "00:30:43",
+    "text": "I included the integration setup in that number. To separate it: INR 26,000 plus tax is the recurring annual subscription, and INR 13,000 is the one-time accounting integration setup."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1865.2662,
+    "timecode": "00:31:05",
+    "text": "Okay, I want the proposal to be attractive, including that setup charge. We have been discussing this for a long time and still need to decide whether it is the right tool. My colleague will finish the questions, then we will discuss internally."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 1937.5404,
+    "timecode": "00:32:17",
+    "text": "We need help now, but would start with perhaps four or five employees. Some people hesitate to personally fund large travel bookings even when reimbursement is quick. We want to see the feedback and workflow before widening usage."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2068.4524,
+    "timecode": "00:34:28",
+    "text": "Who else needs to approve this? Would it help to walk them through it as well?"
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 2083.4343,
+    "timecode": "00:34:43",
+    "text": "Our CFO approves the larger payments. We need to explain the proposal to them; that part is still ahead of us."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 2139.3916,
+    "timecode": "00:35:39",
+    "text": "Most employees will not get a card. Do I then keep the old expense system for the people with one or two occasional claims?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2177.0186,
+    "timecode": "00:36:17",
+    "text": "Those employees could use our reimbursement module. The card and reimbursement users can be on the same platform, though the modules and charges need to be clear."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 2389.3054,
+    "timecode": "00:39:49",
+    "text": "So reimbursement is an additional module? I want to confirm that ordinary review of a card transaction does not require us to buy reimbursement as well."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2442.1045,
+    "timecode": "00:40:42",
+    "text": "Correct. Reviewing the card expense is part of the card workflow. Bank transfers and reimbursements are a separate commercial discussion."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 2461.5574,
+    "timecode": "00:41:01",
+    "text": "For accounting categories, I do not trust every employee to pick the right code. We would need finance to do that before syncing, rather than relying on employees to get it right."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 2591.731,
+    "timecode": "00:43:11",
+    "text": "We are a small growing company, roughly 65 employees. Efficiency matters more than a precise budget, but I do not want to disrupt what works. The external team processes vendor payments manually and it is expensive. That might be relevant later. I would have to confirm the volume—perhaps INR 26–39 lakh a month, with rent a large part."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2859.9995,
+    "timecode": "00:47:39",
+    "text": "I will send the cards proposal and information about the other modules. Could we arrange a follow-up next week?"
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 2923.9043,
+    "timecode": "00:48:43",
+    "text": "Send the details first. We need time with the CFO and will tell you if another call is needed. Let us make that decision internally before scheduling more."
+   }
+  ],
+  "unavailable_reason": null
+ }
+}

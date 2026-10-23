@@ -1,0 +1,216 @@
+{
+ "source_type": "meeting",
+ "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "partner",
+  "coaching"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "partner",
+  "coaching"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/partner/M01__cb5cecac__partner-note.md",
+  "routes/coaching/M01__cb5cecac__coaching.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+  "title": "Harborpath Advisory / SpendNest discussion",
+  "starts_at": "2026-08-21T13:00:00Z",
+  "ends_at": "2026-08-21T13:15:00Z",
+  "duration_seconds": 1121,
+  "provider": "google_meet",
+  "join_url": "https://meet.example.invalid/cb5cecac-e68d-52b7-b10b-b0c748efc467",
+  "organizer_email": "team06@example.com",
+  "attendee_count": 1,
+  "recording_status": "recorded",
+  "recording_detail": null,
+  "recording_id": "99a82374-ab84-5b94-9a63-388aefa57fb9",
+  "has_transcript": true,
+  "has_video": true,
+  "summary": null,
+  "summary_status": "failed",
+  "redacted": true
+ },
+ "source_transcript_payload": {
+  "meeting_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+  "turns": [
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 163.97572,
+    "timecode": "00:02:43",
+    "text": "My understanding was that you help people open bank accounts remotely. That is what I wanted to explore for the clients coming through Harborpath Advisory."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 173.26791,
+    "timecode": "00:02:53",
+    "text": "Yes, with one important boundary: we work with registered businesses, not individuals opening personal accounts. Is the business use case what you had in mind?"
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 193.70634,
+    "timecode": "00:03:13",
+    "text": "I am open to whatever I can sensibly offer our clients. Tell me what the actual product is and how the arrangement works."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 197.33392,
+    "timecode": "00:03:17",
+    "text": "For businesses with a US entity, SpendNest offers virtual accounts and wallets in several currencies. There are corporate cards as well, and an expense platform for businesses with more transactions. Expenses can sync into accounting tools. But I want to repeat the registered-business point before we get into the rest."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 285.8739,
+    "timecode": "00:04:45",
+    "text": "Are you already recommending other digital account providers? I am trying to understand what you currently do for clients who need this."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 302.25674,
+    "timecode": "00:05:02",
+    "text": "Yes, I use some myself and recommend them. Usually I receive nothing for the recommendation. If there is a sensible commercial arrangement here, that is interesting to me."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 318.14392,
+    "timecode": "00:05:18",
+    "text": "Let me show you the partner commission slide, the customer pricing and the onboarding requirements. We had a short slot; can you stay a little longer if needed?"
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 364.25873,
+    "timecode": "00:06:04",
+    "text": "A bit longer is fine. But I do not need a detailed explanation of every feature. Send me the presentation or a document and I can use AI to work through the material."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 385.0909,
+    "timecode": "00:06:25",
+    "text": "Understood. The activation payment is USD 260 when a referred company gets its account approved by our compliance partners. The cards option also has an interchange revenue share and a bonus based on the customer's spending during the first 60 days. For example, USD 6,500–32,500 of spend earns a USD 195 bonus; the next bracket through USD 130,000 earns USD 390. There is also a volume bonus for every fifth successful referral."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 506.50092,
+    "timecode": "00:08:26",
+    "text": "Customer pricing is separate from your commission. On the card plan there is a USD 38 monthly charge below USD 2,600 of monthly card spending. Above that threshold the plan fee is waived. The bank-transfer plan uses outgoing transfer volume rather than the number of users. There are introductory offers too, so I will put the exact terms in writing rather than expect you to remember this slide."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 618.2069,
+    "timecode": "00:10:18",
+    "text": "Any questions on that before I cover what a referred business must provide?"
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 626.18176,
+    "timecode": "00:10:26",
+    "text": "No, let us get the partner onboarding started."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 629.2069,
+    "timecode": "00:10:29",
+    "text": "For you, we send a memorandum to sign. For customers, approval needs incorporation and tax documents, identity documents, an ownership chart and a website. Another important point is evidence of US operations or intended operations: contracts, service agreements or similar material. A newly formed business may not have that yet. I do not want a referral to be surprised later when compliance asks for it."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 758.7031,
+    "timecode": "00:12:38",
+    "text": "Okay, that distinction makes sense."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 761.6889,
+    "timecode": "00:12:41",
+    "text": "Normally you introduce a business by email and our sales team holds a short demo. That checks that what the business needs actually matches what SpendNest provides."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 817.741,
+    "timecode": "00:13:37",
+    "text": "How do we track that? Is there a referral link, a code, or am I writing an introduction each time?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 830.8069,
+    "timecode": "00:13:50",
+    "text": "I can share a sheet that shows the leads you referred, where they are in onboarding and the commission associated with them."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 851.965,
+    "timecode": "00:14:11",
+    "text": "That is the tracking, but how do I send the lead in? Is there a link they can use?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 857.3529,
+    "timecode": "00:14:17",
+    "text": "An email introduction is our usual starting point. I can also provide a unique referral link if that is easier for your process."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 883.38904,
+    "timecode": "00:14:43",
+    "text": "It cannot depend on me manually writing every email. This needs to scale when people discover the offer through us."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 890.0259,
+    "timecode": "00:14:50",
+    "text": "Then let us use the unique link. They fill in the business information, then go through to arranging a demo with our team. The shared sheet would still show their onboarding status and the relevant commission."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 934.69305,
+    "timecode": "00:15:34",
+    "text": "Okay, that is closer to what I need."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 939.5799,
+    "timecode": "00:15:39",
+    "text": "Two limitations to include in your material: receiving funds here means bank transfers, not directly taking card payments from customers. A business can use a separate card-payment processor and settle into its account. It also needs a way to fund the account, either an international transfer from its own bank or incoming customer funds, before making outgoing payments."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 1040.6271,
+    "timecode": "00:17:20",
+    "text": "The main thing is to have all of that written down, with the link and contact route. Then I can prepare a product page and make the offer available quickly."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1057.6979,
+    "timecode": "00:17:37",
+    "text": "I will send the documents and the information discussed here."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 1063.275,
+    "timecode": "00:17:43",
+    "text": "Later, perhaps we could record a podcast with someone who can explain the product well. That could help us introduce it."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1076.73,
+    "timecode": "00:17:56",
+    "text": "Yes, I can connect you with marketing about that. We can also explore featuring Harborpath Advisory on our partner page and promoting the services through our business channels."
+   },
+   {
+    "speaker": "Partner A",
+    "starts_at_seconds": 1103.36,
+    "timecode": "00:18:23",
+    "text": "Good. I look forward to the information so we can take it from there."
+   }
+  ],
+  "unavailable_reason": null
+ }
+}

@@ -1,0 +1,1238 @@
+{
+ "sealed_at": "2026-10-23T04:33:06.424Z",
+ "records": {
+  "call|2ec4404c-beee-5377-a63c-aab701da08ed": {
+   "ref": "C01",
+   "source_type": "call",
+   "source_id": "2ec4404c-beee-5377-a63c-aab701da08ed",
+   "source_revision": 1,
+   "text_sha": "9424a277dae6",
+   "routes": [
+    "closed",
+    "coaching"
+   ],
+   "substantive": true,
+   "why": "Contact clearly declined and nothing is owed (closed). The opening drew repeated 'why are you calling' (coaching).",
+   "what": "Cold partnership outreach about Harborlight Advisory. The contact did not know why he was called, objected to the call and declined; he says their processes are already very automated.",
+   "ev": [
+    {
+     "q": "I didn't ask for this call, and I'm not interested.",
+     "say": "Explicit decline"
+    },
+    {
+     "q": "it's still a cold call, isn't it? Yes, it is.",
+     "say": "Caller confirms it is cold outreach"
+    },
+    {
+     "q": "Our processes are already very automated.",
+     "say": "Stated reason for no need"
+    }
+   ],
+   "next": [
+    {
+     "do": "Do not re-contact this number; mark as declined (manager decision).",
+     "owner": "not stated",
+     "q": "I'm not interested."
+    }
+   ],
+   "coach": [
+    {
+     "c": "Say who you are and why you are calling in the first sentence; the contact asked 'why are you calling' before getting an answer.",
+     "q": "Why are you calling?"
+    }
+   ],
+   "notEstablished": [
+    "Whether Harborlight Advisory is a partner fit: the contact never described his own firm's work.",
+    "Where the contact list came from beyond the caller's own statement."
+   ],
+   "label": {
+    "stored": "uninterested",
+    "verdict": "supported",
+    "why": "Text agrees with the stored outcome."
+   }
+  },
+  "call|4b870624-8aad-5315-a60e-0db95981cf99": {
+   "ref": "C02",
+   "source_type": "call",
+   "source_id": "4b870624-8aad-5315-a60e-0db95981cf99",
+   "source_revision": 1,
+   "text_sha": "9e5a6f589b8e",
+   "routes": [
+    "log"
+   ],
+   "substantive": false,
+   "why": "Only a receptionist hand-off to voicemail; nothing to analyse beyond the intake log.",
+   "what": "Caller asked for 'Leela' at Fernhaven Group; the receptionist said she was out and transferred to voicemail. No business conversation took place.",
+   "ev": [
+    {
+     "q": "It looks as though she isn't in the office today.",
+     "say": "Wanted contact not reached"
+    }
+   ],
+   "next": [
+    {
+     "do": "Confirm whether a voicemail message was actually left; retry if not.",
+     "owner": "not stated",
+     "q": "Her voicemail would be fine, thank you."
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "Whether a message was recorded: the text ends at the transfer.",
+    "The name 'Leela' here is the person asked for at Fernhaven; it is not linked to the SpendNest rep Leela (names are not identities)."
+   ],
+   "label": {
+    "stored": "ooo (is_conversation=true)",
+    "verdict": "overstated",
+    "why": "Source marks this a conversation, but the text is a receptionist transfer with no business discussion."
+   }
+  },
+  "call|20d509ba-d589-5334-9aef-ea4ce6105b1a": {
+   "ref": "C03",
+   "source_type": "call",
+   "source_id": "20d509ba-d589-5334-9aef-ea4ce6105b1a",
+   "source_revision": 1,
+   "text_sha": "6aa43bc612d5",
+   "routes": [
+    "deal"
+   ],
+   "substantive": true,
+   "why": "Existing lead with an agreed email plus a Monday/Tuesday call; interest is lukewarm.",
+   "what": "Kiran re-contacted a lead about developer/API access on a very poor line. The contact says it is not essential and price was a concern; they agreed to move to email and speak early next week.",
+   "ev": [
+    {
+     "q": "it isn't essential enough for us to spend much on it",
+     "say": "Low urgency"
+    },
+    {
+     "q": "price was a concern",
+     "say": "Price is the blocker"
+    },
+    {
+     "q": "Send the email and we can speak Monday or Tuesday.",
+     "say": "Agreed next step"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send the email, subject 'Developer access and event notifications - follow-up'.",
+     "owner": "Kiran (caller)",
+     "q": "Developer access and event notifications"
+    },
+    {
+     "do": "Call Monday or Tuesday after the email; ask for a budget range.",
+     "owner": "Kiran (caller)",
+     "q": "I'll also try you on Monday."
+    }
+   ],
+   "coach": [
+    {
+     "c": "Good recovery: acknowledged the bad line and moved to email with an agreed subject line.",
+     "q": "Could we do this by email?"
+    }
+   ],
+   "notEstablished": [
+    "Budget or decision process.",
+    "Whether the development team still wants API access ('I would need to check with the team').",
+    "Some words may be misheard: the contact says audio was faint."
+   ],
+   "label": {
+    "stored": "follow_up",
+    "verdict": "supported",
+    "why": "Email and a call were agreed, but intent is weak."
+   }
+  },
+  "call|bcdcbf56-d338-5c78-9a97-42c2fc1c9931": {
+   "ref": "C04",
+   "source_type": "call",
+   "source_id": "bcdcbf56-d338-5c78-9a97-42c2fc1c9931",
+   "source_revision": 1,
+   "text_sha": "04a05d82ab46",
+   "routes": [
+    "deal"
+   ],
+   "substantive": false,
+   "why": "Voicemail left on an open evaluation; the next step is waiting for a callback and a retry.",
+   "what": "Arun left a voicemail for Ritesh about Lanternpath Media's evaluation of the expense platform, noting the first email went to a wrong address and was re-sent to the corrected one.",
+   "ev": [
+    {
+     "q": "My understanding is that our information first went to the wrong email address.",
+     "say": "Earlier delivery problem"
+    },
+    {
+     "q": "Please call me back to let me know where things stand.",
+     "say": "Asks for callback"
+    }
+   ],
+   "next": [
+    {
+     "do": "Await callback from Ritesh; retry later if none.",
+     "owner": "Arun (caller)",
+     "q": "Please call me back to let me know where things stand."
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "Whether the corrected email was received or read.",
+    "Whether Lanternpath is still evaluating: no human responded."
+   ],
+   "label": {
+    "stored": "voicemail",
+    "verdict": "supported",
+    "why": "Text is a voicemail message."
+   }
+  },
+  "call|75a6b94f-7717-5cfb-9e41-0acc94415e17": {
+   "ref": "C05",
+   "source_type": "call",
+   "source_id": "75a6b94f-7717-5cfb-9e41-0acc94415e17",
+   "source_revision": 1,
+   "text_sha": "9d9b30e200f1",
+   "routes": [
+    "deal",
+    "coaching"
+   ],
+   "substantive": true,
+   "why": "Only action is sending a presentation (deal, low priority). Feature-listing against 'we already have that' is a coaching point.",
+   "what": "Meera pitched store-expense cards and vendor payments to a retailer that already runs several providers (StoreHarbor and others). The contact asked for a presentation and said he might revisit if providers change.",
+   "ev": [
+    {
+     "q": "We already have that.",
+     "say": "First overlap"
+    },
+    {
+     "q": "We have that too.",
+     "say": "Second overlap"
+    },
+    {
+     "q": "If we ever decide to change the providers we already have, we could consider it then.",
+     "say": "Soft brush-off, not buying intent"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send the presentation to the confirmed email address (contact05@example.com); low priority.",
+     "owner": "Meera (caller)",
+     "q": "Certainly. I have an email address noted down"
+    }
+   ],
+   "coach": [
+    {
+     "c": "The contact said the capability already existed three times in a row. Ask which gap exists before listing features.",
+     "q": "We have that too."
+    }
+   ],
+   "notEstablished": [
+    "Whether current providers leave any gap.",
+    "The contact's role or authority."
+   ],
+   "label": {
+    "stored": "follow_up",
+    "verdict": "overstated",
+    "why": "A courtesy request for a deck is not a buying follow-up; contact says change is only a future possibility."
+   }
+  },
+  "call|12216d5c-e254-52c6-b344-47de4c6e1ae5": {
+   "ref": "C06",
+   "source_type": "call",
+   "source_id": "12216d5c-e254-52c6-b344-47de4c6e1ae5",
+   "source_revision": 1,
+   "text_sha": "8373c5d0b86d",
+   "routes": [
+    "closed",
+    "coaching"
+   ],
+   "substantive": true,
+   "why": "Contact has an automated, centrally run setup and declined. One qualifying question was good but came late.",
+   "what": "Cold call to a 120+ store business. The contact says essential processes are automated and run centrally; he will reach out if a need appears.",
+   "ev": [
+    {
+     "q": "That is why I said the arrangements are already in place.",
+     "say": "Existing process covers the need"
+    },
+    {
+     "q": "If a particular need comes up later, we will reach out.",
+     "say": "No follow-up requested"
+    }
+   ],
+   "next": [
+    {
+     "do": "No follow-up; log as declined.",
+     "owner": "not stated",
+     "q": "we will reach out"
+    }
+   ],
+   "coach": [
+    {
+     "c": "The qualifying question (cards vs cash advances) only came after a long feature pitch; ask it earlier.",
+     "q": "One final question"
+    }
+   ],
+   "notEstablished": [
+    "Caller identity: spoken name 'Ravi' but the source rep label is Meera.",
+    "Store count (120+) is the caller's understanding, not verified."
+   ],
+   "label": {
+    "stored": "uninterested",
+    "verdict": "supported",
+    "why": "Text agrees."
+   }
+  },
+  "call|428817fa-7e9e-5418-a7d4-bb396d28dfbf": {
+   "ref": "C07",
+   "source_type": "call",
+   "source_id": "428817fa-7e9e-5418-a7d4-bb396d28dfbf",
+   "source_revision": 1,
+   "text_sha": "c84367f9daa4",
+   "routes": [
+    "partner"
+   ],
+   "substantive": true,
+   "why": "Advisory firm that refers clients: a channel conversation, not a buyer.",
+   "what": "Dev pitched a partnership: virtual business accounts for clients of Willowbank Advisory after incorporation. The contact refers clients to providers already and asked for a proposal on a chat app; a Monday call was agreed.",
+   "ev": [
+    {
+     "q": "Yes, that is something we normally do.",
+     "say": "Firm already refers clients for accounts"
+    },
+    {
+     "q": "could you message me on our chat app and send whatever proposal you have?",
+     "say": "Requests proposal"
+    },
+    {
+     "q": "could I call on Monday",
+     "say": "Monday call proposed and accepted"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send the proposal on the chat app.",
+     "owner": "Dev (caller)",
+     "q": "send whatever proposal you have"
+    },
+    {
+     "do": "Call Monday after the proposal arrives.",
+     "owner": "Dev (caller)",
+     "q": "could I call on Monday"
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "Partner interest: he answered questions, then asked for a proposal.",
+    "The last question about digital accounts got no answer in the text ('Hello?').",
+    "Commission or economics were not discussed. Call text has no speaker labels; attribution is inferred."
+   ],
+   "label": {
+    "stored": "follow_up",
+    "verdict": "supported",
+    "why": "Proposal and Monday call agreed."
+   }
+  },
+  "call|129497b2-8e1d-5e01-919c-e8a852b5ff68": {
+   "ref": "C08",
+   "source_type": "call",
+   "source_id": "129497b2-8e1d-5e01-919c-e8a852b5ff68",
+   "source_revision": 1,
+   "text_sha": "69722c25f1e2",
+   "routes": [
+    "deal"
+   ],
+   "substantive": true,
+   "why": "Contact points to a colleague and allows his name to be used: warm hand-off, details unknown.",
+   "what": "Meera was given an email for a people-operations colleague who may have been evaluating a solution for frontline locations; the contact allowed her to say they spoke.",
+   "ev": [
+    {
+     "q": "If you send him a proposal and say you spoke with me, he can take a look.",
+     "say": "Permission to cite the conversation"
+    },
+    {
+     "q": "I don't know the details.",
+     "say": "Contact lacks detail on the other evaluation"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send the proposal to contact08@example.com, citing the conversation.",
+     "owner": "Meera (caller)",
+     "q": "I'll send the information there."
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "That the colleague owns the purchase.",
+    "Anything about the other 'discussions' mentioned."
+   ],
+   "label": {
+    "stored": "referred",
+    "verdict": "supported",
+    "why": "Warm referral with permission."
+   }
+  },
+  "call|4a1de681-f884-55e8-b1ad-de22d17cd959": {
+   "ref": "C09",
+   "source_type": "call",
+   "source_id": "4a1de681-f884-55e8-b1ad-de22d17cd959",
+   "source_revision": 1,
+   "text_sha": "688e1b5e78cd",
+   "routes": [
+    "deal"
+   ],
+   "substantive": true,
+   "why": "Contact named a business head but forbade using his name: a pointer with a constraint.",
+   "what": "The contact's business uses internally built software and is not looking outside. He suggested the business head, Mr Rishabh, on a professional network, but asked that his own name not be used.",
+   "ev": [
+    {
+     "q": "We have developed our own software internally",
+     "say": "No current need"
+    },
+    {
+     "q": "No, please don't use my name.",
+     "say": "Constraint on outreach"
+    },
+    {
+     "q": "I don't know the detail.",
+     "say": "Contact cannot say whether the software also pays"
+    }
+   ],
+   "next": [
+    {
+     "do": "Optional: approach Mr Rishabh via the professional network WITHOUT naming Vedant.",
+     "owner": "not stated",
+     "q": "No, please don't use my name."
+    }
+   ],
+   "coach": [
+    {
+     "c": "Asking before using a name was right; record the constraint where the next person will see it.",
+     "q": "Would it be all right if I mentioned your name"
+    }
+   ],
+   "notEstablished": [
+    "Mr Rishabh's role or willingness: only the contact's description.",
+    "Whether the internal system pays vendors."
+   ],
+   "label": {
+    "stored": "referred",
+    "verdict": "overstated",
+    "why": "A pointer, not a warm referral: the contact refused to be cited."
+   }
+  },
+  "call|b747f592-810e-583c-9b81-8db5ab035806": {
+   "ref": "C10",
+   "source_type": "call",
+   "source_id": "b747f592-810e-583c-9b81-8db5ab035806",
+   "source_revision": 1,
+   "text_sha": "d453eafc418c",
+   "routes": [
+    "deal",
+    "coaching"
+   ],
+   "substantive": true,
+   "why": "Only agreed action is sending a brief; a follow-up call was declined. Pushing for a call is a coaching point.",
+   "what": "Meera reached Aniket, who no longer works at Meadowbrick and is now in manufacturing. He asked for a brief on the messaging app and refused a follow-up call.",
+   "ev": [
+    {
+     "q": "I don't work there anymore.",
+     "say": "Contact left the account"
+    },
+    {
+     "q": "why don't you just send me a brief on the messaging app?",
+     "say": "Agreed action"
+    },
+    {
+     "q": "No. I said I will contact you if there is anything to discuss.",
+     "say": "Follow-up call refused"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send the brief on the messaging app; do NOT schedule the Monday/Tuesday call.",
+     "owner": "Meera (caller)",
+     "q": "All right, I'll do that."
+    },
+    {
+     "do": "Update the account: this contact has left Meadowbrick.",
+     "owner": "not stated",
+     "q": "I don't work there anymore."
+    }
+   ],
+   "coach": [
+    {
+     "c": "After the contact asked for a brief, the rep still proposed a call. Offer once and accept the answer.",
+     "q": "Would a follow-up call on Monday or Tuesday next week be okay"
+    }
+   ],
+   "notEstablished": [
+    "Whether Meadowbrick has another relevant contact.",
+    "The new employer's name or fit."
+   ],
+   "label": {
+    "stored": "follow_up",
+    "verdict": "overstated",
+    "why": "The contact explicitly declined a follow-up; only a brief was agreed."
+   }
+  },
+  "meeting|cb5cecac-e68d-52b7-b10b-b0c748efc467": {
+   "ref": "M01",
+   "source_type": "meeting",
+   "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+   "source_revision": 1,
+   "text_sha": "2379bb9e6b2d",
+   "routes": [
+    "partner",
+    "coaching"
+   ],
+   "substantive": true,
+   "why": "Harborpath Advisory is a referral partner: commission is a cost to SpendNest, not a buyer's pipeline.",
+   "what": "Partner onboarding conversation: registered-business boundary, USD 260 activation payment, card bonuses, document requirements, and a unique referral link as the intake method.",
+   "ev": [
+    {
+     "t": 8,
+     "say": "Partner wants a document, not feature detail"
+    },
+    {
+     "t": 9,
+     "say": "USD 260 activation payment on approval; bonus brackets"
+    },
+    {
+     "t": 13,
+     "say": "Referral needs documents incl. evidence of US operations"
+    },
+    {
+     "t": 21,
+     "say": "Unique referral link agreed"
+    },
+    {
+     "t": 25,
+     "say": "Commitment to send documents"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send the documents and information discussed.",
+     "owner": "Team member A (local label)",
+     "t": 25
+    },
+    {
+     "do": "Send the partner memorandum to sign.",
+     "owner": "Team member A (local label)",
+     "t": 13
+    },
+    {
+     "do": "Provide the unique referral link and tracking sheet.",
+     "owner": "Team member A (local label)",
+     "t": 21
+    },
+    {
+     "do": "Connect with marketing about a podcast; explore a partner-page feature.",
+     "owner": "Team member A (local label)",
+     "t": 27
+    }
+   ],
+   "coach": [
+    {
+     "c": "Good: the registered-business limit and US-operations evidence were stated early so referrals are not surprised.",
+     "t": 13
+    },
+    {
+     "c": "After the partner said he did not need every feature, detailed bonus brackets and pricing still followed. Check appetite before detail.",
+     "t": 9
+    }
+   ],
+   "notEstablished": [
+    "No agreement is signed; the memorandum is still to be sent.",
+    "Exact commercial terms: the rep says they will be put in writing (turn 10).",
+    "Expected referral volume."
+   ],
+   "label": null
+  },
+  "meeting|1a21c409-c050-5787-90af-2667e057e1b6": {
+   "ref": "M02",
+   "source_type": "meeting",
+   "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+   "source_revision": 1,
+   "text_sha": "21637751ee66",
+   "routes": [
+    "internal"
+   ],
+   "substantive": true,
+   "why": "SpendNest is the buyer evaluating a vendor (LedgerBridge): an internal/vendor note, not a sales route.",
+   "what": "SpendNest explored e-invoicing coverage with LedgerBridge. The supplier will send a volume template; pricing models and setup fees were described; the SpendNest side asked for written pricing, the supplier prefers a walkthrough.",
+   "ev": [
+    {
+     "t": 13,
+     "say": "Target: Q4, starting Singapore and Australia, then India"
+    },
+    {
+     "t": 15,
+     "say": "Q4 is not an immovable deadline"
+    },
+    {
+     "t": 18,
+     "say": "Issued volumes are estimates"
+    },
+    {
+     "t": 31,
+     "say": "Setup from EUR 2,600; supported implementation from EUR 6,500"
+    },
+    {
+     "t": 33,
+     "say": "Supplier prefers walking through the proposal"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send the volume template.",
+     "owner": "Supplier A (LedgerBridge)",
+     "t": 36
+    },
+    {
+     "do": "Complete the template: received volumes from AP usage, issued volumes as labelled estimates.",
+     "owner": "Team member A (local label)",
+     "t": 18
+    },
+    {
+     "do": "Hold a short explanation call after the template; decide who attends the commercial call.",
+     "owner": "not stated",
+     "t": 35
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "Management approval or budget: turn 12 is a belief about the market, not a decision.",
+    "Customer demand: turns 10 and 16 are the team's own claims; no pipeline data is supplied.",
+    "Which markets require e-invoicing now (turn 5: no reliable answer).",
+    "EUR setup prices are vendor figures and are not comparable to INR or USD amounts elsewhere."
+   ],
+   "label": null
+  },
+  "meeting|398672e7-62dd-5afd-846d-0237d49792fb": {
+   "ref": "M03",
+   "source_type": "meeting",
+   "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+   "source_revision": 1,
+   "text_sha": "bb9a05db2e81",
+   "routes": [
+    "deal",
+    "coaching"
+   ],
+   "substantive": true,
+   "why": "Active evaluation by a prospect with a pending proposal; three coachable moments.",
+   "what": "Asterloom Systems evaluated domestic prepaid cards plus reimbursement. Surprises: prepaid not credit, review after spend not before, and a price that moved from INR 26,000 to INR 39,000 until split into subscription and setup. CFO sign-off is still ahead.",
+   "ev": [
+    {
+     "t": 6,
+     "say": "Customer expected a corporate credit card, learns cards are prepaid"
+    },
+    {
+     "t": 9,
+     "say": "Customer wants approval before payment"
+    },
+    {
+     "t": 14,
+     "say": "Card review happens after spend"
+    },
+    {
+     "t": 24,
+     "say": "INR 26,000 + tax subscription and INR 13,000 one-time setup"
+    },
+    {
+     "t": 28,
+     "say": "CFO approves larger payments; not yet briefed"
+    },
+    {
+     "t": 36,
+     "say": "Customer asks for details first, declines scheduling"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send the cards proposal and information on other modules, showing subscription and setup separately.",
+     "owner": "Team member A (local label)",
+     "t": 35
+    },
+    {
+     "do": "Do not book a follow-up call; the customer will say if another call is needed after speaking to the CFO.",
+     "owner": "Customer B",
+     "t": 36
+    }
+   ],
+   "coach": [
+    {
+     "c": "The funding model (prepaid, no credit) surfaced only when the customer asked. State it before the demo.",
+     "t": 6
+    },
+    {
+     "c": "The price was quoted as INR 26,000 earlier and INR 39,000 here until split. Quote subscription and setup separately every time.",
+     "t": 23
+    },
+    {
+     "c": "The customer asked for approval before payment; the card flow reviews after spend. Name that difference explicitly.",
+     "t": 14
+    }
+   ],
+   "notEstablished": [
+    "Deal value: INR 10-13 lakh monthly spend 'needs checking' (turn 5) is the customer's spend, not a contract value.",
+    "CFO approval.",
+    "Reimbursement module pricing (turn 32: separate discussion).",
+    "Intent to replace the overseas provider: turn 19 says they are happy with it."
+   ],
+   "label": null
+  },
+  "meeting|b0f79b3d-37ba-52f9-b2bc-58b159dd6d91": {
+   "ref": "M04",
+   "source_type": "meeting",
+   "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+   "source_revision": 1,
+   "text_sha": "14aa6ef34b55",
+   "routes": [
+    "cs",
+    "deal"
+   ],
+   "substantive": true,
+   "why": "Existing customer in a card-programme migration with an unresolved credit need (cs); a bank-card feed option is a possible expansion (deal).",
+   "what": "Cedarwave Distribution's cards are being moved to a new programme that remains prepaid. Their main issue is prepaid vs credit. A bank-credit-card transaction feed was discussed, but it shows no available limit and eligibility is unconfirmed; the customer asked what they would gain.",
+   "ev": [
+    {
+     "t": 10,
+     "say": "Replacement is still prepaid"
+    },
+    {
+     "t": 11,
+     "say": "Moving from prepaid to credit is the main issue"
+    },
+    {
+     "t": 25,
+     "say": "Feed does not show available credit limit"
+    },
+    {
+     "t": 26,
+     "say": "Customer asks what SpendNest adds over the bank portal"
+    },
+    {
+     "t": 23,
+     "say": "Existing-card eligibility not confirmed"
+    },
+    {
+     "t": 31,
+     "say": "Department/user move needs a guided session"
+    }
+   ],
+   "next": [
+    {
+     "do": "Confirm whether already-issued bank cards can join the feed and whether accounting sync is feasible.",
+     "owner": "Team member A (local label)",
+     "t": 28
+    },
+    {
+     "do": "Arrange a session to verify and move departments/users.",
+     "owner": "Team member A (local label)",
+     "t": 31
+    },
+    {
+     "do": "Discuss options internally and bring in the credit team.",
+     "owner": "Customer A",
+     "t": 29
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "Whether Cedarwave proceeds with the migration (turn 29).",
+    "Feed feasibility (turns 21, 23).",
+    "INR 1.3 crore is the customer's credit line (turn 22), not SpendNest revenue.",
+    "M13 has the same company name in its title; this is only a proposed association."
+   ],
+   "label": null
+  },
+  "meeting|657b9e9d-9472-5b01-a127-a648ad7e8cf7": {
+   "ref": "M06",
+   "source_type": "meeting",
+   "source_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+   "source_revision": 1,
+   "text_sha": "de93a63525dd",
+   "routes": [
+    "deal",
+    "coaching"
+   ],
+   "substantive": true,
+   "why": "Early discovery with a branch-level contact; follow-up material is promised but buying authority is unclear.",
+   "what": "Mapletrail Services: the contact runs finance for one branch while a central team owns payables and ERP. Collections automation was discussed; invoice volumes were given roughly and corrected mid-call; she asked how payment data is protected.",
+   "ev": [
+    {
+     "t": 7,
+     "say": "Dedicated central team handles supplier payments"
+    },
+    {
+     "t": 12,
+     "say": "First volume estimate: 260-390 invoices a month"
+    },
+    {
+     "t": 15,
+     "say": "Corrected to about 390-520 a month"
+    },
+    {
+     "t": 16,
+     "say": "Both are rough numbers"
+    },
+    {
+     "t": 32,
+     "say": "Security answer was general; material to follow"
+    },
+    {
+     "t": 33,
+     "say": "'Send the information and we can stay in touch'"
+    }
+   ],
+   "next": [
+    {
+     "do": "Send material on the receivables/collections and expense sides.",
+     "owner": "Team member A (local label)",
+     "t": 29
+    },
+    {
+     "do": "Send security and compliance material.",
+     "owner": "Team member A (local label)",
+     "t": 32
+    }
+   ],
+   "coach": [
+    {
+     "c": "Good discovery: role and process were explored before the pitch.",
+     "t": 1
+    },
+    {
+     "c": "The security question got a general answer. Bring specific material to the next conversation.",
+     "t": 32
+    },
+    {
+     "c": "Asking count and value together caused the volume mix-up; ask one at a time.",
+     "t": 13
+    }
+   ],
+   "notEstablished": [
+    "Buying authority: she covers one branch (turn 2) and central finance owns much of the process.",
+    "Invoice volume: both estimates are rough.",
+    "Budget, timeline and decision process were not discussed."
+   ],
+   "label": null
+  },
+  "meeting|4f304fff-fd40-5cfc-a366-0a134c445c2a": {
+   "ref": "M07",
+   "source_type": "meeting",
+   "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+   "source_revision": 2,
+   "text_sha": "3fb25914de59",
+   "routes": [
+    "cs"
+   ],
+   "substantive": true,
+   "why": "Customer walked through four live product issues: a support follow-up with time-boxed promises, not a sales conversation.",
+   "what": "Willowfield Trust showed four problems: a saved description that does not refresh, no upload on the Recreate payment route (workaround exists), reimbursements stuck in Processing, and Mark as paid carrying the previous amount forward.",
+   "ev": [
+    {
+     "t": 7,
+     "say": "Description issue captured; no explanation yet"
+    },
+    {
+     "t": 13,
+     "say": "Workaround: save, then upload via invoice inbox Review"
+    },
+    {
+     "t": 19,
+     "say": "Stuck Processing payments; update promised in an hour or two"
+    },
+    {
+     "t": 23,
+     "say": "Mark as paid keeps the previous amount"
+    },
+    {
+     "t": 25,
+     "say": "Will be reported as a separate issue"
+    }
+   ],
+   "next": [
+    {
+     "do": "Get the description-refresh issue checked today.",
+     "owner": "Team member A (local label)",
+     "t": 7
+    },
+    {
+     "do": "Raise the direct-upload failure with the team; the workaround is not a fix.",
+     "owner": "Team member A (local label)",
+     "t": 15
+    },
+    {
+     "do": "Chase stuck Processing payments and tell the customer when the team confirms.",
+     "owner": "Team member A (local label)",
+     "t": 19
+    },
+    {
+     "do": "Report the Mark as paid refresh bug separately.",
+     "owner": "Team member A (local label)",
+     "t": 25
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "Root causes: 'I do not have an explanation for it yet' (turn 7).",
+    "Whether the Processing payments were actually released (turn 19: 'appear to have been').",
+    "Whether promised updates were delivered: the text ends at turn 27."
+   ],
+   "label": null
+  },
+  "meeting|4b5b9192-f3fc-505a-8e77-4d2ffaa54594": {
+   "ref": "M09",
+   "source_type": "meeting",
+   "source_id": "4b5b9192-f3fc-505a-8e77-4d2ffaa54594",
+   "source_revision": 1,
+   "text_sha": "53fa7b8db1fd",
+   "routes": [
+    "cs"
+   ],
+   "substantive": true,
+   "why": "Customer onboarding blocked by a login failure, with a dated promise: a customer issue, not a sales conversation.",
+   "what": "The customer cannot log in to Brookmint Holdings; even a fresh reset link said the token had expired. Also discussed: shared-mailbox admin risk, the Northkite Equipment accounting fix she made herself, and a missing receipt.",
+   "ev": [
+    {
+     "t": 2,
+     "say": "Invitation sent; acceptance not recorded"
+    },
+    {
+     "t": 21,
+     "say": "Fresh reset link also reports expired token"
+    },
+    {
+     "t": 22,
+     "say": "Update promised today or by Monday at the latest"
+    },
+    {
+     "t": 17,
+     "say": "Customer rejects an admin setup that depends on trust"
+    },
+    {
+     "t": 23,
+     "say": "Northkite accounting change corrected by the customer"
+    }
+   ],
+   "next": [
+    {
+     "do": "Investigate the expired-token problem and update the customer today, otherwise Monday.",
+     "owner": "Team member A (local label)",
+     "t": 31
+    },
+    {
+     "do": "Offer a refresher session or take specific workflow questions.",
+     "owner": "Team member A (local label)",
+     "t": 25
+    },
+    {
+     "do": "Talk to IT about separate email identities for the two companies.",
+     "owner": "Customer A",
+     "t": 32
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "Whether the login was fixed after the call.",
+    "Which admin/permission design the customer will choose.",
+    "Account names come from the transcript: the meeting title names no account."
+   ],
+   "label": null
+  },
+  "meeting|337f297d-9385-5b82-9e54-5019c1ed912c": {
+   "ref": "M10",
+   "source_type": "meeting",
+   "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+   "source_revision": 1,
+   "text_sha": "ef6ee5b85336",
+   "routes": [
+    "internal"
+   ],
+   "substantive": true,
+   "why": "Internal training on billing, no customer: an internal note with no sales follow-up.",
+   "what": "A trainer walked colleagues through invoice generation and clearing: due-period exceptions, zero-value invoices and the failed-deduction retry and freeze sequence.",
+   "ev": [
+    {
+     "t": 4,
+     "say": "Attendee lacks back-office super-admin access"
+    },
+    {
+     "t": 7,
+     "say": "Nominal 7-day due period; month-end exceptions"
+    },
+    {
+     "t": 13,
+     "say": "Zero-value invoices are not automatically missing payments"
+    },
+    {
+     "t": 17,
+     "say": "Retry, freeze and manual billing-date recovery"
+    },
+    {
+     "t": 20,
+     "say": "Trainer to request back-office access"
+    }
+   ],
+   "next": [
+    {
+     "do": "Request back-office access for the next training session.",
+     "owner": "Team member A (local label)",
+     "t": 20
+    }
+   ],
+   "coach": [],
+   "notEstablished": [
+    "No deal, customer commitment or sales signal.",
+    "The retry schedule is the trainer's description, not verified system behaviour.",
+    "Whether the optional attendee ever joined (turn 2)."
+   ],
+   "label": null
+  }
+ },
+ "brief": {
+  "title": "Manager brief - Friday 21 August 2026 (Asia/Kolkata)",
+  "important": [
+   {
+    "text": "Brookmint Holdings cannot log in: a fresh reset link also failed with an expired token, and the customer was promised an update 'today, or by Monday at the latest'.",
+    "ev": [
+     {
+      "ref": "M09",
+      "t": 21
+     },
+     {
+      "ref": "M09",
+      "t": 22
+     }
+    ],
+    "needs": [
+     "M09"
+    ]
+   },
+   {
+    "text": "Willowfield Trust showed four live product problems; reimbursement payments are stuck in Processing with an 'hour or two' promise.",
+    "ev": [
+     {
+      "ref": "M07",
+      "t": 19
+     }
+    ],
+    "needs": [
+     "M07"
+    ]
+   },
+   {
+    "text": "Cedarwave Distribution (existing customer): after migration the cards stay prepaid while moving to credit is 'the main issue'; the bank-card feed shows no available limit.",
+    "ev": [
+     {
+      "ref": "M04",
+      "t": 11
+     },
+     {
+      "ref": "M04",
+      "t": 25
+     }
+    ],
+    "needs": [
+     "M04"
+    ]
+   },
+   {
+    "text": "Asterloom Systems is a real evaluation, but CFO approval is pending and the customer declined to schedule another call.",
+    "ev": [
+     {
+      "ref": "M03",
+      "t": 28
+     },
+     {
+      "ref": "M03",
+      "t": 36
+     }
+    ],
+    "needs": [
+     "M03"
+    ]
+   }
+  ],
+  "followups": [
+   {
+    "text": "M09: reply to Brookmint on the expired-token login (promised today/Monday).",
+    "ev": [
+     {
+      "ref": "M09",
+      "t": 31
+     }
+    ],
+    "needs": [
+     "M09"
+    ]
+   },
+   {
+    "text": "M07: update Willowfield on the stuck Processing payments; report the four issues.",
+    "ev": [
+     {
+      "ref": "M07",
+      "t": 19
+     }
+    ],
+    "needs": [
+     "M07"
+    ]
+   },
+   {
+    "text": "M03: send the cards proposal with subscription and setup shown separately; do not request a meeting.",
+    "ev": [
+     {
+      "ref": "M03",
+      "t": 35
+     },
+     {
+      "ref": "M03",
+      "t": 36
+     }
+    ],
+    "needs": [
+     "M03"
+    ]
+   },
+   {
+    "text": "M04: confirm bank-card feed eligibility and accounting sync; schedule the department-move session.",
+    "ev": [
+     {
+      "ref": "M04",
+      "t": 28
+     },
+     {
+      "ref": "M04",
+      "t": 31
+     }
+    ],
+    "needs": [
+     "M04"
+    ]
+   },
+   {
+    "text": "M01: send the partner memorandum, documents, referral link and tracking sheet.",
+    "ev": [
+     {
+      "ref": "M01",
+      "t": 25
+     }
+    ],
+    "needs": [
+     "M01"
+    ]
+   },
+   {
+    "text": "C03 and C07: Monday calls, only after the email (Kiran) and the chat-app proposal (Dev) are sent.",
+    "ev": [
+     {
+      "ref": "C03",
+      "q": "Send the email and we can speak Monday or Tuesday."
+     },
+     {
+      "ref": "C07",
+      "q": "could I call on Monday"
+     }
+    ],
+    "needs": [
+     "C03",
+     "C07"
+    ]
+   },
+   {
+    "text": "C08, C09, C05, C10: send only what was asked. C08: cite the conversation. C09: do NOT name Vedant. C10: no call.",
+    "ev": [
+     {
+      "ref": "C09",
+      "q": "No, please don't use my name."
+     },
+     {
+      "ref": "C10",
+      "q": "No. I said I will contact you if there is anything to discuss."
+     }
+    ],
+    "needs": [
+     "C08",
+     "C09",
+     "C05",
+     "C10"
+    ]
+   }
+  ],
+  "coaching": [
+   {
+    "text": "State the funding model (prepaid vs credit) before any demo; it surprised the customer in two of eight transcribed meetings.",
+    "ev": [
+     {
+      "ref": "M03",
+      "t": 6
+     },
+     {
+      "ref": "M04",
+      "t": 11
+     }
+    ],
+    "needs": [
+     "M03",
+     "M04"
+    ]
+   },
+   {
+    "text": "Quote price once and unbundled (subscription vs setup).",
+    "ev": [
+     {
+      "ref": "M03",
+      "t": 23
+     }
+    ],
+    "needs": [
+     "M03"
+    ]
+   },
+   {
+    "text": "Offer a follow-up once, then accept the answer.",
+    "ev": [
+     {
+      "ref": "C10",
+      "q": "Would a follow-up call on Monday or Tuesday next week be okay"
+     }
+    ],
+    "needs": [
+     "C10"
+    ]
+   },
+   {
+    "text": "Ask which gap exists before listing features when the contact already has a provider.",
+    "ev": [
+     {
+      "ref": "C05",
+      "q": "We have that too."
+     }
+    ],
+    "needs": [
+     "C05"
+    ]
+   }
+  ],
+  "cautions": [
+   {
+    "text": "Three stored 'follow_up/referred' labels (C05, C09, C10) are weaker than the text, and C02's is_conversation=true is a receptionist transfer.",
+    "ev": [
+     {
+      "ref": "C10",
+      "q": "I don't work there anymore."
+     }
+    ],
+    "needs": [
+     "C02",
+     "C05",
+     "C09",
+     "C10"
+    ]
+   },
+   {
+    "text": "Six meetings have no usable text and 20 background calls have none; six of those calls share one counterparty number within minutes. Absence of text is not evidence that nothing happened."
+   }
+  ]
+ }
+}

@@ -1,0 +1,1164 @@
+{
+ "generated_at": "2026-10-23T04:36:13.298Z",
+ "unique_source_records": 44,
+ "route_assignments": 53,
+ "usable_text": 18,
+ "shared_outputs": [
+  "daily/2026-08-21/manager-brief.md",
+  "daily/2026-08-21/activity-by-person.csv"
+ ],
+ "records": [
+  {
+   "record_ref": "B01",
+   "source_type": "call",
+   "source_id": "4868e5cd-5ab8-581c-a0e4-acc37385f0cf",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B01__4868e5cd.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B02",
+   "source_type": "call",
+   "source_id": "5747e4cd-e24f-5bed-bf74-9e3f326b2d77",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Leela",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/B02__5747e4cd__review-item.md"
+   ],
+   "record_file": "records/B02__5747e4cd.json",
+   "flags": [
+    "cluster"
+   ]
+  },
+  {
+   "record_ref": "B03",
+   "source_type": "call",
+   "source_id": "024caffc-d16e-5843-b325-682dbc8d448e",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B03__024caffc.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B04",
+   "source_type": "call",
+   "source_id": "530207ea-d67b-521a-8085-bdb9ae665417",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B04__530207ea.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B05",
+   "source_type": "call",
+   "source_id": "903641e9-d761-591a-a149-334ddfcd236e",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Leela",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/B05__903641e9__review-item.md"
+   ],
+   "record_file": "records/B05__903641e9.json",
+   "flags": [
+    "cluster"
+   ]
+  },
+  {
+   "record_ref": "B06",
+   "source_type": "call",
+   "source_id": "53f61c95-27b9-50c2-8755-08f957594950",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Leela",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/B06__53f61c95__review-item.md"
+   ],
+   "record_file": "records/B06__53f61c95.json",
+   "flags": [
+    "cluster"
+   ]
+  },
+  {
+   "record_ref": "B07",
+   "source_type": "call",
+   "source_id": "f9be8537-1ad9-58fc-be24-78f73d09db9c",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B07__f9be8537.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B08",
+   "source_type": "call",
+   "source_id": "77350513-913c-5fed-b4e6-71009de9df03",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Leela",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/B08__77350513__review-item.md"
+   ],
+   "record_file": "records/B08__77350513.json",
+   "flags": [
+    "cluster"
+   ]
+  },
+  {
+   "record_ref": "B09",
+   "source_type": "call",
+   "source_id": "747390bc-f359-5609-bf79-0a44ef8919bd",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B09__747390bc.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B10",
+   "source_type": "call",
+   "source_id": "3ea930a1-0496-51e3-9dca-adc3be29331a",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B10__3ea930a1.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B11",
+   "source_type": "call",
+   "source_id": "bfefcb48-1a98-5610-a0ee-0f03434188a9",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Leela",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/B11__bfefcb48__review-item.md"
+   ],
+   "record_file": "records/B11__bfefcb48.json",
+   "flags": [
+    "cluster"
+   ]
+  },
+  {
+   "record_ref": "B12",
+   "source_type": "call",
+   "source_id": "9a64eb58-d462-5a6e-aa9e-c0f88852ebe0",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B12__9a64eb58.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B13",
+   "source_type": "call",
+   "source_id": "6521ed7d-53fc-5b3b-be77-7d4610c90ed7",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B13__6521ed7d.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B14",
+   "source_type": "call",
+   "source_id": "81da63f4-eac6-5efd-95e1-69ad6e6def25",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Leela",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/B14__81da63f4__review-item.md"
+   ],
+   "record_file": "records/B14__81da63f4.json",
+   "flags": [
+    "cluster"
+   ]
+  },
+  {
+   "record_ref": "B15",
+   "source_type": "call",
+   "source_id": "2ada5ab0-8a84-54b7-a071-cd5bd6ad5abd",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B15__2ada5ab0.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B16",
+   "source_type": "call",
+   "source_id": "1f5181ed-4175-5d73-a16b-01d404b1820d",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Leela",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B16__1f5181ed.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B17",
+   "source_type": "call",
+   "source_id": "1645d595-1896-5201-9395-cb8a9f1c5f3a",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B17__1645d595.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B18",
+   "source_type": "call",
+   "source_id": "26c3ccc3-63a6-55f6-a5a3-e279b36b7e88",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B18__26c3ccc3.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B19",
+   "source_type": "call",
+   "source_id": "6ee11c0e-c74a-5805-b552-657443378b72",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B19__6ee11c0e.json",
+   "flags": []
+  },
+  {
+   "record_ref": "B20",
+   "source_type": "call",
+   "source_id": "94b4f015-b243-5b89-b435-9957125ecdd4",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Leela",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "logged_no_text",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/B20__94b4f015.json",
+   "flags": []
+  },
+  {
+   "record_ref": "C01",
+   "source_type": "call",
+   "source_id": "2ec4404c-beee-5377-a63c-aab701da08ed",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "closed",
+    "coaching"
+   ],
+   "active_routes": [
+    "closed",
+    "coaching"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/closed/C01__2ec4404c__closed-note.md",
+    "routes/coaching/C01__2ec4404c__coaching.md"
+   ],
+   "record_file": "records/C01__2ec4404c.json",
+   "flags": []
+  },
+  {
+   "record_ref": "C02",
+   "source_type": "call",
+   "source_id": "4b870624-8aad-5315-a60e-0db95981cf99",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "log"
+   ],
+   "active_routes": [
+    "log"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/log/intake-log.csv"
+   ],
+   "record_file": "records/C02__4b870624.json",
+   "flags": [
+    "label_challenged"
+   ]
+  },
+  {
+   "record_ref": "C03",
+   "source_type": "call",
+   "source_id": "20d509ba-d589-5334-9aef-ea4ce6105b1a",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Kiran",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "deal"
+   ],
+   "active_routes": [
+    "deal"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/deal/C03__20d509ba__next-steps.md"
+   ],
+   "record_file": "records/C03__20d509ba.json",
+   "flags": []
+  },
+  {
+   "record_ref": "C04",
+   "source_type": "call",
+   "source_id": "bcdcbf56-d338-5c78-9a97-42c2fc1c9931",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Arun",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "deal"
+   ],
+   "active_routes": [
+    "deal"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/deal/C04__bcdcbf56__next-steps.md"
+   ],
+   "record_file": "records/C04__bcdcbf56.json",
+   "flags": []
+  },
+  {
+   "record_ref": "C05",
+   "source_type": "call",
+   "source_id": "75a6b94f-7717-5cfb-9e41-0acc94415e17",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Meera",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "deal",
+    "coaching"
+   ],
+   "active_routes": [
+    "deal",
+    "coaching"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/deal/C05__75a6b94f__next-steps.md",
+    "routes/coaching/C05__75a6b94f__coaching.md"
+   ],
+   "record_file": "records/C05__75a6b94f.json",
+   "flags": [
+    "label_challenged"
+   ]
+  },
+  {
+   "record_ref": "C06",
+   "source_type": "call",
+   "source_id": "12216d5c-e254-52c6-b344-47de4c6e1ae5",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Meera",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "closed",
+    "coaching"
+   ],
+   "active_routes": [
+    "closed",
+    "coaching"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/closed/C06__12216d5c__closed-note.md",
+    "routes/coaching/C06__12216d5c__coaching.md"
+   ],
+   "record_file": "records/C06__12216d5c.json",
+   "flags": []
+  },
+  {
+   "record_ref": "C07",
+   "source_type": "call",
+   "source_id": "428817fa-7e9e-5418-a7d4-bb396d28dfbf",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Dev",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "partner"
+   ],
+   "active_routes": [
+    "partner"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/partner/C07__428817fa__partner-note.md"
+   ],
+   "record_file": "records/C07__428817fa.json",
+   "flags": []
+  },
+  {
+   "record_ref": "C08",
+   "source_type": "call",
+   "source_id": "129497b2-8e1d-5e01-919c-e8a852b5ff68",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Meera",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "deal"
+   ],
+   "active_routes": [
+    "deal"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/deal/C08__129497b2__next-steps.md"
+   ],
+   "record_file": "records/C08__129497b2.json",
+   "flags": []
+  },
+  {
+   "record_ref": "C09",
+   "source_type": "call",
+   "source_id": "4a1de681-f884-55e8-b1ad-de22d17cd959",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Meera",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "deal"
+   ],
+   "active_routes": [
+    "deal"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/deal/C09__4a1de681__next-steps.md"
+   ],
+   "record_file": "records/C09__4a1de681.json",
+   "flags": [
+    "label_challenged"
+   ]
+  },
+  {
+   "record_ref": "C10",
+   "source_type": "call",
+   "source_id": "b747f592-810e-583c-9b81-8db5ab035806",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "Meera",
+   "who_role": "Call rep",
+   "suggested_routes": [
+    "deal",
+    "coaching"
+   ],
+   "active_routes": [
+    "deal",
+    "coaching"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/deal/C10__b747f592__next-steps.md",
+    "routes/coaching/C10__b747f592__coaching.md"
+   ],
+   "record_file": "records/C10__b747f592.json",
+   "flags": [
+    "label_challenged"
+   ]
+  },
+  {
+   "record_ref": "M01",
+   "source_type": "meeting",
+   "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team06",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "partner",
+    "coaching"
+   ],
+   "active_routes": [
+    "partner",
+    "coaching"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/partner/M01__cb5cecac__partner-note.md",
+    "routes/coaching/M01__cb5cecac__coaching.md"
+   ],
+   "record_file": "records/M01__cb5cecac.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M02",
+   "source_type": "meeting",
+   "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team07",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "internal"
+   ],
+   "active_routes": [
+    "internal"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/internal/M02__1a21c409__internal-note.md"
+   ],
+   "record_file": "records/M02__1a21c409.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M03",
+   "source_type": "meeting",
+   "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team08",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "deal",
+    "coaching"
+   ],
+   "active_routes": [
+    "deal",
+    "coaching"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/deal/M03__398672e7__next-steps.md",
+    "routes/coaching/M03__398672e7__coaching.md"
+   ],
+   "record_file": "records/M03__398672e7.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M04",
+   "source_type": "meeting",
+   "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team09",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "cs",
+    "deal"
+   ],
+   "active_routes": [
+    "cs",
+    "deal"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/cs/M04__b0f79b3d__customer-issues.md",
+    "routes/deal/M04__b0f79b3d__next-steps.md"
+   ],
+   "record_file": "records/M04__b0f79b3d.json",
+   "flags": [
+    "related"
+   ]
+  },
+  {
+   "record_ref": "M05",
+   "source_type": "meeting",
+   "source_id": "e0ecb112-ed94-5e8e-ae71-19def5536337",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team08",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/M05__e0ecb112__review-item.md"
+   ],
+   "record_file": "records/M05__e0ecb112.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M06",
+   "source_type": "meeting",
+   "source_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team10",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "deal",
+    "coaching"
+   ],
+   "active_routes": [
+    "deal",
+    "coaching"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/deal/M06__657b9e9d__next-steps.md",
+    "routes/coaching/M06__657b9e9d__coaching.md"
+   ],
+   "record_file": "records/M06__657b9e9d.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M07",
+   "source_type": "meeting",
+   "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+   "applied_source_revision": 2,
+   "local_date": "2026-08-21",
+   "who": "team09",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "cs"
+   ],
+   "active_routes": [
+    "cs",
+    "internal"
+   ],
+   "manual_override": true,
+   "manual_note": "Four product bugs must also reach product/ops.",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 2,
+   "output_paths": [
+    "routes/cs/M07__4f304fff__customer-issues.md",
+    "routes/internal/M07__4f304fff__internal-note.md"
+   ],
+   "record_file": "records/M07__4f304fff.json",
+   "flags": [
+    "override"
+   ]
+  },
+  {
+   "record_ref": "M08",
+   "source_type": "meeting",
+   "source_id": "883182d8-eb86-56f9-a928-152365998d15",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team08",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/M08__883182d8__review-item.md"
+   ],
+   "record_file": "records/M08__883182d8.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M09",
+   "source_type": "meeting",
+   "source_id": "4b5b9192-f3fc-505a-8e77-4d2ffaa54594",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team11",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "cs"
+   ],
+   "active_routes": [
+    "cs"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/cs/M09__4b5b9192__customer-issues.md"
+   ],
+   "record_file": "records/M09__4b5b9192.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M10",
+   "source_type": "meeting",
+   "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team12",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "internal"
+   ],
+   "active_routes": [
+    "internal"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "analysed",
+   "analysis_freshness": "current",
+   "analysis_based_on_revision": 1,
+   "output_paths": [
+    "routes/internal/M10__337f297d__internal-note.md"
+   ],
+   "record_file": "records/M10__337f297d.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M11",
+   "source_type": "meeting",
+   "source_id": "fc651475-187c-5882-a644-b501408e8647",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team13",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/M11__fc651475__review-item.md"
+   ],
+   "record_file": "records/M11__fc651475.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M12",
+   "source_type": "meeting",
+   "source_id": "c759b921-e9d3-540c-a06b-474c5710342d",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "arun",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/M12__c759b921__review-item.md"
+   ],
+   "record_file": "records/M12__c759b921.json",
+   "flags": []
+  },
+  {
+   "record_ref": "M13",
+   "source_type": "meeting",
+   "source_id": "794a9d1c-889d-5957-873f-8a1271b03455",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team09",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/M13__794a9d1c__review-item.md"
+   ],
+   "record_file": "records/M13__794a9d1c.json",
+   "flags": [
+    "related"
+   ]
+  },
+  {
+   "record_ref": "M14",
+   "source_type": "meeting",
+   "source_id": "93f4867d-65cd-5236-bc55-7bd57df8ac24",
+   "applied_source_revision": 1,
+   "local_date": "2026-08-21",
+   "who": "team14",
+   "who_role": "Meeting organiser",
+   "suggested_routes": [
+    "review"
+   ],
+   "active_routes": [
+    "review"
+   ],
+   "manual_override": false,
+   "manual_note": "",
+   "processing_review_state": "needs_review",
+   "analysis_freshness": "n/a (no text)",
+   "analysis_based_on_revision": null,
+   "output_paths": [
+    "routes/review/M14__93f4867d__review-item.md"
+   ],
+   "record_file": "records/M14__93f4867d.json",
+   "flags": []
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "source_type": "meeting",
+ "source_id": "c759b921-e9d3-540c-a06b-474c5710342d",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "review"
+ ],
+ "suggested_by": "rule: meeting without text",
+ "active_routes": [
+  "review"
+ ],
+ "manual_override": null,
+ "intake_state": "needs_review",
+ "analysis_freshness": "n/a (no text)",
+ "outputs": [
+  "routes/review/M12__c759b921__review-item.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "c759b921-e9d3-540c-a06b-474c5710342d",
+  "title": "SpendNest setup - Sample account",
+  "starts_at": "2026-08-21T14:30:00Z",
+  "ends_at": "2026-08-21T15:00:00Z",
+  "duration_seconds": 1800,
+  "provider": "google_meet",
+  "join_url": "https://meet.example.invalid/c759b921-e9d3-540c-a06b-474c5710342d",
+  "organizer_email": "arun@example.com",
+  "attendee_count": 1,
+  "recording_status": "cancelled",
+  "recording_detail": "The notetaker was cancelled before the meeting started.",
+  "recording_id": null,
+  "has_transcript": false,
+  "has_video": false,
+  "summary": null,
+  "summary_status": null,
+  "redacted": true
+ },
+ "source_transcript_payload": {
+  "meeting_id": "c759b921-e9d3-540c-a06b-474c5710342d",
+  "turns": [],
+  "unavailable_reason": "The notetaker was cancelled before the meeting started."
+ }
+}

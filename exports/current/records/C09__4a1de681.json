@@ -1,0 +1,51 @@
+{
+ "source_type": "call",
+ "source_id": "4a1de681-f884-55e8-b1ad-de22d17cd959",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "deal"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "deal"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/deal/C09__4a1de681__next-steps.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "4a1de681-f884-55e8-b1ad-de22d17cd959",
+  "external_call_id": "EXT-00029",
+  "workspace_slug": "workspace-03",
+  "rep_email": "meera@example.com",
+  "rep_name": "Meera",
+  "rep_user_id": "f90ff541-3566-5786-8855-b598d1cd48ff",
+  "direction": "outbound",
+  "direction_raw": "outbound",
+  "from_number": "PHONE-024",
+  "to_number": "PHONE-030",
+  "started_at": "2026-08-21T11:26:03Z",
+  "duration_seconds": 143,
+  "talk_time_seconds": 143,
+  "speaker_count": 2,
+  "segment_count": 18,
+  "is_connected": true,
+  "is_conversation": true,
+  "observed_outcome": "referred",
+  "classification_reason": null,
+  "classification_status": "stored",
+  "is_campaign_call": true,
+  "first_dial_ever": true,
+  "first_connect_ever": true,
+  "prior_dials_ever": 0,
+  "prior_connects_ever": 0,
+  "summary": null,
+  "summary_status": "stored",
+  "transcript": "Hello, good evening, Mr Vedant. Good evening. Meera here. To be clear, this is a cold call. Could I take about forty seconds to explain the reason? If it's not relevant, you can stop me. All right. I'm with SpendNest, an expense platform. We work with businesses operating multiple stores, and I understand you have roughly a hundred and thirty locations. We bring store expenses, petty cash and supplier payments into one view, using controlled instant payments and invoice processing. Budgets and spending limits help management see who is spending what, while approval steps govern outgoing expenses. We have developed our own software internally, so at present we aren't looking for anything outside the organisation. I understand. Just one question so another colleague doesn't call you again about the same thing: does your internal system only record expenses and approvals, or does it also make the payments? I don't know the detail. Our central team handles this. If you want to speak to somebody about it, you can find our business head, Mr Rishabh, on a professional networking site. He would be able to explain our requirements and whether there are any gaps in the software. Understood. Would it be all right if I mentioned your name when contacting him? No, please don't use my name. Of course, no problem. That is why I wanted to ask first. Thank you for pointing me in the right direction. Thank you. Have a good day. You too. Goodbye."
+ },
+ "source_transcript_payload": null
+}

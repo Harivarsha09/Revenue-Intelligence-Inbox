@@ -1,0 +1,9 @@
+PASS 1 initial import: 44 unique records, 17 usable texts; M07 state = awaiting_transcript
+PASS 2 repeat import (shuffled order): added 0, ignored 44; counts unchanged {"n":44,"text":17,"conn":11,"assign":52}
+PASS 3 manual correction on M07: active routes cs,internal (suggested was review)
+PASS 4 update import: replaced M07; still 44 records; usable texts 18; M07 rev 2, analysis current, suggested now cs, manual kept cs,internal
+PASS 5 stale revision 1 re-imported after rev 2: ignored 44; M07 still rev 2 with text
+PASS 6 restart: state reloaded from disk; M07 manual route cs,internal and text intact
+PASS 7 other 43 source records remain revision 1
+PASS 8 export x2: 88 files, identical file list (no duplicate active copies), 44 manifest rows, every listed output exists, obsolete M07 review item removed
+PASS    route assignments 53 vs 44 unique records (multi-route records counted once per route)

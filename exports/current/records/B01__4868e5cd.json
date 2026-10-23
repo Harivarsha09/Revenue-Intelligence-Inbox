@@ -1,0 +1,51 @@
+{
+ "source_type": "call",
+ "source_id": "4868e5cd-5ab8-581c-a0e4-acc37385f0cf",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "log"
+ ],
+ "suggested_by": "rule: no text, not connected",
+ "active_routes": [
+  "log"
+ ],
+ "manual_override": null,
+ "intake_state": "logged_no_text",
+ "analysis_freshness": "n/a (no text)",
+ "outputs": [
+  "routes/log/intake-log.csv"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "4868e5cd-5ab8-581c-a0e4-acc37385f0cf",
+  "external_call_id": "EXT-00001",
+  "workspace_slug": "workspace-01",
+  "rep_email": "arun@example.com",
+  "rep_name": "Arun",
+  "rep_user_id": "be3ed75a-8e5c-5545-ad7f-986d9d7b0821",
+  "direction": "outbound",
+  "direction_raw": "outbound",
+  "from_number": "PHONE-001",
+  "to_number": "PHONE-002",
+  "started_at": "2026-08-21T18:29:29Z",
+  "duration_seconds": 8,
+  "talk_time_seconds": 5,
+  "speaker_count": 1,
+  "segment_count": 1,
+  "is_connected": false,
+  "is_conversation": false,
+  "observed_outcome": "voicemail",
+  "classification_reason": null,
+  "classification_status": "stored",
+  "is_campaign_call": true,
+  "first_dial_ever": true,
+  "first_connect_ever": true,
+  "prior_dials_ever": 0,
+  "prior_connects_ever": 0,
+  "summary": null,
+  "summary_status": "stored",
+  "transcript": null
+ },
+ "source_transcript_payload": null
+}

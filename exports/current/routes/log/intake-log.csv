@@ -1,0 +1,16 @@
+ref,source_type,source_id,who,time_ist,source_label,reason
+B01,call,4868e5cd-5ab8-581c-a0e4-acc37385f0cf,Arun,23:59,voicemail,Source-labelled voicemail; no text to analyse.
+B03,call,024caffc-d16e-5843-b325-682dbc8d448e,Arun,23:59,voicemail,Source-labelled voicemail; no text to analyse.
+B04,call,530207ea-d67b-521a-8085-bdb9ae665417,Arun,23:58,voicemail,Source-labelled voicemail; no text to analyse.
+B07,call,f9be8537-1ad9-58fc-be24-78f73d09db9c,Arun,23:57,voicemail,Source-labelled voicemail; no text to analyse.
+B09,call,747390bc-f359-5609-bf79-0a44ef8919bd,Arun,23:56,voicemail,Source-labelled voicemail; no text to analyse.
+B10,call,3ea930a1-0496-51e3-9dca-adc3be29331a,Arun,23:55,voicemail,Source-labelled voicemail; no text to analyse.
+B12,call,9a64eb58-d462-5a6e-aa9e-c0f88852ebe0,Arun,23:55,voicemail,Source-labelled voicemail; no text to analyse.
+B13,call,6521ed7d-53fc-5b3b-be77-7d4610c90ed7,Arun,23:54,voicemail,Source-labelled voicemail; no text to analyse.
+B15,call,2ada5ab0-8a84-54b7-a071-cd5bd6ad5abd,Arun,23:53,voicemail,Source-labelled voicemail; no text to analyse.
+B16,call,1f5181ed-4175-5d73-a16b-01d404b1820d,Leela,23:53,voicemail,Source-labelled voicemail; no text to analyse.
+B17,call,1645d595-1896-5201-9395-cb8a9f1c5f3a,Arun,23:52,voicemail,Source-labelled voicemail; no text to analyse.
+B18,call,26c3ccc3-63a6-55f6-a5a3-e279b36b7e88,Arun,23:51,voicemail,Source-labelled voicemail; no text to analyse.
+B19,call,6ee11c0e-c74a-5805-b552-657443378b72,Arun,23:51,voicemail,Source-labelled voicemail; no text to analyse.
+B20,call,94b4f015-b243-5b89-b435-9957125ecdd4,Leela,23:51,voicemail,Source-labelled voicemail; no text to analyse.
+C02,call,4b870624-8aad-5315-a60e-0db95981cf99,Arun,23:14,ooo,Only a receptionist hand-off to voicemail; nothing to analyse beyond the intake log.

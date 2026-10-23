@@ -1,0 +1,242 @@
+{
+ "source_type": "meeting",
+ "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "cs",
+  "deal"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "cs",
+  "deal"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/cs/M04__b0f79b3d__customer-issues.md",
+  "routes/deal/M04__b0f79b3d__next-steps.md"
+ ],
+ "proposed_related_records_title_match_only": [
+  "M13"
+ ],
+ "source_payload": {
+  "id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+  "title": "Cedarwave Distribution / SpendNest discussion",
+  "starts_at": "2026-08-21T09:00:00Z",
+  "ends_at": "2026-08-21T09:30:00Z",
+  "duration_seconds": 1985,
+  "provider": "google_meet",
+  "join_url": "https://meet.example.invalid/b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+  "organizer_email": "team09@example.com",
+  "attendee_count": 1,
+  "recording_status": "recorded",
+  "recording_detail": null,
+  "recording_id": "9609caaf-3fef-5c05-9195-08698b318c9d",
+  "has_transcript": true,
+  "has_video": true,
+  "summary": null,
+  "summary_status": "stored",
+  "redacted": true
+ },
+ "source_transcript_payload": {
+  "meeting_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+  "turns": [
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 51.422813,
+    "timecode": "00:00:51",
+    "text": "I wanted to discuss the migration while there is still time to plan it. We should cover the present situation, the next steps and any feedback from your side."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 90.72081,
+    "timecode": "00:01:30",
+    "text": "Much of your usage is physical-card spending. We have seen acceptance problems with the existing programme and are proposing a move to a different provider and card network. We already operate that alternative programme, including a wallet-payment option."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 197.5499,
+    "timecode": "00:03:17",
+    "text": "I thought the wallet-payment option was coming to our existing cards too. Is that not what was being discussed?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 203.1708,
+    "timecode": "00:03:23",
+    "text": "It is not available on the current network in this arrangement. The programme we are moving to supports it. The plan is to close the old programme in the coming weeks, so we need to organise the transition."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 273.6032,
+    "timecode": "00:04:33",
+    "text": "Does that mean the current physical cards and virtual cards will both stop working?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 278.45682,
+    "timecode": "00:04:38",
+    "text": "Yes, under that programme. Users need to complete identity checks again because the provider changes. We can create the new account in parallel so you do not need to shut the current cards before starting the setup."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 344.56024,
+    "timecode": "00:05:44",
+    "text": "Before we do all that, there was another problem: connecting this application with our people and expense system. We did not think that integration was possible."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 367.09482,
+    "timecode": "00:06:07",
+    "text": "We do have integration support. Let us clarify which part you need rather than assume the whole connection is unavailable."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 372.35223,
+    "timecode": "00:06:12",
+    "text": "Also, will the replacement be a proper credit card? We do not really want another prepaid arrangement indefinitely."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 381.41483,
+    "timecode": "00:06:21",
+    "text": "The replacement I described is still prepaid. I do not want to promise that this becomes a credit card in the near term."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 437.49622,
+    "timecode": "00:07:17",
+    "text": "Give me a moment to check internally. Okay, I have confirmed it: moving from prepaid to credit is the main issue for us. At some stage we will have to consider another option for that."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 596.8395,
+    "timecode": "00:09:56",
+    "text": "My view is that the expense-platform alternatives still depend on banks for credit. Some alternatives are considerably more expensive. We have a bank partnership for corporate credit cards, subject to the bank's assessment. That is different from us changing the prepaid product into credit."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 742.03595,
+    "timecode": "00:12:22",
+    "text": "We have been trying through our existing bank. Perhaps we get credit cards for around 26 people and keep SpendNest prepaid cards for the others."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 759.4221,
+    "timecode": "00:12:39",
+    "text": "We passed the earlier enquiry to the bank, but it was put on hold from your side. We can revisit it. The bank has spending and turnover criteria. The software layer can provide transaction visibility, receipts and review if the supported cards are connected."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 826.074,
+    "timecode": "00:13:46",
+    "text": "To be clear, that bank option would actually be credit, with us paying the bank separately, while the other employees could remain prepaid?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 829.0521,
+    "timecode": "00:13:49",
+    "text": "Yes, that is the distinction. Both types could be visible in the same workspace, although the control and funding arrangements are different."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 894.3586,
+    "timecode": "00:14:54",
+    "text": "Let me bring in someone from our credit team. They know what is already in place and can help decide whether this is worth progressing."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1070.516,
+    "timecode": "00:17:50",
+    "text": "We are discussing the planned card migration. The replacement is still prepaid, but there may be a way to connect our bank-issued credit cards to the SpendNest application."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1134.2886,
+    "timecode": "00:18:54",
+    "text": "The bank issues and controls the credit. After the relevant agreement and network consent, transaction details can come into our platform after settlement. Users can then attach receipts and send items for review. It is not the same as our real-time prepaid feed."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1444.6035,
+    "timecode": "00:24:04",
+    "text": "Can those transactions also sync into our accounting system? That was part of the problem before."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1448.5846,
+    "timecode": "00:24:08",
+    "text": "Many transaction fields can sync, but source-balance reconciliation is a question in this setup. I need the team to confirm feasibility for your bank-card transactions rather than say the existing prepaid integration automatically covers it."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 1472.6356,
+    "timecode": "00:24:32",
+    "text": "We already have a corporate credit line of about INR 1.3 crore. Cards are issued to only a few people so far. We were waiting for the bank administration portal before attempting the accounting integration. If your platform can sit in between, we should understand that route."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1544.6288,
+    "timecode": "00:25:44",
+    "text": "I will check whether your already-issued cards can join the transaction-feed programme. If that is possible, the next steps are the agreement, network approval and linking the cards to users. I cannot confirm the existing-card eligibility on this call."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 1628.8208,
+    "timecode": "00:27:08",
+    "text": "Would it show our available credit limit as well as the transactions? We need to know what is available to spend."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1631.7168,
+    "timecode": "00:27:11",
+    "text": "No, the proposed feed shows transaction details after settlement. The bank retains that control, so the available limit would not be shown here in the way it is for cards we issue."
+   },
+   {
+    "speaker": "Customer B",
+    "starts_at_seconds": 1656.8547,
+    "timecode": "00:27:36",
+    "text": "Then what do we gain by adding SpendNest? We can already see transactions in the bank portal."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1668.2108,
+    "timecode": "00:27:48",
+    "text": "The additional layer is collecting receipts and business reasons, reviewing exceptions, attaching project information and reconciling alongside prepaid spending. Accounting integration could add value too, but that specific bank-card path still needs checking."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1796.8358,
+    "timecode": "00:29:56",
+    "text": "Please discuss the options internally. We can plan a mix of bank credit cards, prepaid cards or wallet payments, depending on your decision. I will confirm the eligibility and accounting questions with the programme team."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1885.1982,
+    "timecode": "00:31:25",
+    "text": "We will speak with the relevant people internally and see whether this is the direction we want. We are not deciding the whole migration on this call."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1908.7112,
+    "timecode": "00:31:48",
+    "text": "There is also the earlier issue with moving users between departments. The current department setup has become confusing and needs correcting."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1928.7112,
+    "timecode": "00:32:08",
+    "text": "I cannot move those users directly from the assistant view available to me. We can arrange a session to guide you through it and verify which departments and users should move before changing anything."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1965.7316,
+    "timecode": "00:32:45",
+    "text": "Okay. I will come back to you on that as well."
+   }
+  ],
+  "unavailable_reason": null
+ }
+}

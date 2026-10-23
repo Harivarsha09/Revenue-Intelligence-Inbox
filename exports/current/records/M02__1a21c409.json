@@ -1,0 +1,261 @@
+{
+ "source_type": "meeting",
+ "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "internal"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "internal"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/internal/M02__1a21c409__internal-note.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "1a21c409-c050-5787-90af-2667e057e1b6",
+  "title": "LedgerBridge / SpendNest discussion",
+  "starts_at": "2026-08-21T11:30:00Z",
+  "ends_at": "2026-08-21T12:00:00Z",
+  "duration_seconds": 3113,
+  "provider": "google_meet",
+  "join_url": "https://meet.example.invalid/1a21c409-c050-5787-90af-2667e057e1b6",
+  "organizer_email": "team07@example.com",
+  "attendee_count": 1,
+  "recording_status": "recorded",
+  "recording_detail": null,
+  "recording_id": "674657f9-9d16-5bf1-b979-efae41370bd8",
+  "has_transcript": true,
+  "has_video": true,
+  "summary": null,
+  "summary_status": "stored",
+  "redacted": true
+ },
+ "source_transcript_payload": {
+  "meeting_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+  "turns": [
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 322.3498,
+    "timecode": "00:05:22",
+    "text": "I work on strategy and partnerships at SpendNest. We serve businesses with cards and accounts payable, and we are developing accounts receivable. We want to understand whether LedgerBridge can give us compliant invoicing coverage across our operating markets. My colleague leads the product side."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 394.35864,
+    "timecode": "00:06:34",
+    "text": "Then I will cover the market strategy as well as the technical integration. Are you more interested in generating invoice PDFs or in electronic invoicing through the relevant networks?"
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 523.0778,
+    "timecode": "00:08:43",
+    "text": "Electronic invoicing is the bigger opportunity. Customers already have approved invoice layouts. The manual part is taking that information into separate portals, both when issuing and receiving invoices."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 561.61884,
+    "timecode": "00:09:21",
+    "text": "That helps narrow the initial markets. We can also support voluntary electronic invoicing before a mandate. Do you already know which customers require that?"
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 604.7818,
+    "timecode": "00:10:04",
+    "text": "I would need to check. I do not have a reliable answer on that specific requirement yet."
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 648.0378,
+    "timecode": "00:10:48",
+    "text": "There is also a US reporting use case around certain non-payroll payments. Is that included, or is it a different service?"
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 669.69086,
+    "timecode": "00:11:09",
+    "text": "That is a reporting requirement rather than our standard invoicing flow. We sometimes handle such needs as custom projects. Our core scope is compliant invoicing, so please keep that distinction in mind."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 750.3336,
+    "timecode": "00:12:30",
+    "text": "We want customers to issue and receive invoices in a compliant way without adding another disconnected platform. With the receivables module coming, this could make the overall product more complete and encourage customers to stay with us."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 858.2846,
+    "timecode": "00:14:18",
+    "text": "So this is a strategic product extension. Is there also direct demand, rather than only a positioning idea?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 874.37366,
+    "timecode": "00:14:34",
+    "text": "Sorry, the connection dropped. Let me repeat the important part. We are seeing larger prospects in our pipeline, and a more complete package could help with those conversations. It is not limited to them, but that is part of the motivation."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 1048.4388,
+    "timecode": "00:17:28",
+    "text": "Has management decided to invest in this, or are you still deciding whether the project should exist at all?"
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 1064.0331,
+    "timecode": "00:17:44",
+    "text": "The view is that electronic invoicing will become more common. We want to start preparing before requirements force us into a rushed implementation."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1135.0283,
+    "timecode": "00:18:55",
+    "text": "We are aiming for the fourth quarter. We would start with Singapore and Australia, then India. We are hoping one integration lets us expand without building the whole thing again."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 1178.8333,
+    "timecode": "00:19:38",
+    "text": "And if that fourth-quarter date slips, what happens internally?"
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 1196.5812,
+    "timecode": "00:19:56",
+    "text": "There are several projects competing for that quarter. Early next year is possible if the work moves. We intend to build the capability, but I would not describe the quarter as an immovable deadline."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1277.82,
+    "timecode": "00:21:17",
+    "text": "We have prospects discussing requirements with us and some willingness to pilot once it is available. This will be a new module, so those conversations are still developing."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 1327.918,
+    "timecode": "00:22:07",
+    "text": "I will send a volume template: countries, small versus larger customers, invoices issued and invoices received. That will let us calculate a proposal and the likely cost per customer."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1407.2921,
+    "timecode": "00:23:27",
+    "text": "Received invoice volumes can be based on current accounts-payable usage. Issued volumes will be estimates because the receivables product is still being built. We should not present those two columns as equally certain."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 1533.4471,
+    "timecode": "00:25:33",
+    "text": "On the demonstration, the same invoice object goes through a sequence of steps. Those steps can create a PDF, create the local electronic format and distribute it. Returned documents and status are available through the API. Country-specific requirements still exist, but the intention is to keep most of your integration consistent."
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 1805.6383,
+    "timecode": "00:30:05",
+    "text": "Where do we learn which fields are required in each region before submitting an invoice? That is the part I want to understand beyond the happy-path demonstration."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 1824.4725,
+    "timecode": "00:30:24",
+    "text": "The playground exposes local fields, and we help during integration. You register each end customer and keep its returned connection key. That customer identity and country tell us which localisation to apply when you submit the invoice."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 1960.5425,
+    "timecode": "00:32:40",
+    "text": "Some countries also require customer-specific credentials. For others our network connection handles that part. The management dashboard lets you inspect setup, invoices and the transition from testing to production."
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 2049.6265,
+    "timecode": "00:34:09",
+    "text": "Can we receive invoices through the network as well, or is this only the issuing side?"
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 2057.0806,
+    "timecode": "00:34:17",
+    "text": "Receiving is supported too. Enable the relevant incoming channels, then retrieve invoice identifiers and their standardised data using the customer's key. The original documents are available as links. The local document parsing happens on our side."
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 2268.0935,
+    "timecode": "00:37:48",
+    "text": "Will we have a readable PDF preview, or do we need to build one from the raw invoice data ourselves?"
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 2292.6245,
+    "timecode": "00:38:12",
+    "text": "If a PDF is supplied, we expose it. Otherwise we can generate one. We have also standardised different incoming document formats for customers who want a consistent presentation across countries."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 2416.1575,
+    "timecode": "00:40:16",
+    "text": "You can try the sandbox using the documentation and an AI coding assistant. Register for a test key first and include the relevant application context. Let me know how the experiment goes."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2517.398,
+    "timecode": "00:41:57",
+    "text": "The product direction looks relevant. Commercially, are we paying for actions, invoice volume, countries, customers, or some combination? We need to understand the structure before taking this further."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 2572.8486,
+    "timecode": "00:42:52",
+    "text": "There are two models: country licences with transaction usage, or licences per end customer with included usage and volume tiers. We need your numbers before recommending one."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2663.1074,
+    "timecode": "00:44:23",
+    "text": "And the commercial relationship is between SpendNest and LedgerBridge? We are providing this to our customers through our product, rather than asking them to buy from you separately."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 2753.3516,
+    "timecode": "00:45:53",
+    "text": "Correct. There is also a one-time setup charge. The basic setup begins at EUR 2,600; a more supported implementation starts at EUR 6,500, and larger projects are scoped separately. The initial setup covers the markets together, rather than charging it again for each expansion."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2834.1924,
+    "timecode": "00:47:14",
+    "text": "Could you send the proposal before the commercial call? We need to brief management and decide which stakeholders should attend."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 2865.7515,
+    "timecode": "00:47:45",
+    "text": "I prefer walking through the proposal. If people only receive a pricing page, they may miss the value and the differences between the two models."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2913.9736,
+    "timecode": "00:48:33",
+    "text": "Our evaluation goes through product fit, the business reason, commercials, then references and support checks. Written pricing helps us follow that process internally. I understand your concern, but we still need to take the numbers back."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 3029.969,
+    "timecode": "00:50:29",
+    "text": "Let us have a short explanation call after you complete the template. You can capture the details for your management discussion, and we can decide who needs to join the next conversation."
+   },
+   {
+    "speaker": "Supplier A",
+    "starts_at_seconds": 3084.221,
+    "timecode": "00:51:24",
+    "text": "I will send the template shortly so we can get that started."
+   }
+  ],
+  "unavailable_reason": null
+ }
+}

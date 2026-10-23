@@ -1,0 +1,51 @@
+{
+ "source_type": "call",
+ "source_id": "81da63f4-eac6-5efd-95e1-69ad6e6def25",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "review"
+ ],
+ "suggested_by": "rule: repeated counterparty",
+ "active_routes": [
+  "review"
+ ],
+ "manual_override": null,
+ "intake_state": "needs_review",
+ "analysis_freshness": "n/a (no text)",
+ "outputs": [
+  "routes/review/B14__81da63f4__review-item.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "81da63f4-eac6-5efd-95e1-69ad6e6def25",
+  "external_call_id": "EXT-00014",
+  "workspace_slug": "workspace-02",
+  "rep_email": "leela@example.com",
+  "rep_name": "Leela",
+  "rep_user_id": null,
+  "direction": "outbound",
+  "direction_raw": "outbound",
+  "from_number": "PHONE-007",
+  "to_number": "PHONE-003",
+  "started_at": "2026-08-21T18:23:44Z",
+  "duration_seconds": 9,
+  "talk_time_seconds": 9,
+  "speaker_count": 1,
+  "segment_count": 1,
+  "is_connected": true,
+  "is_conversation": false,
+  "observed_outcome": "unresponsive",
+  "classification_reason": null,
+  "classification_status": "stored",
+  "is_campaign_call": true,
+  "first_dial_ever": true,
+  "first_connect_ever": true,
+  "prior_dials_ever": 0,
+  "prior_connects_ever": 0,
+  "summary": null,
+  "summary_status": "stored",
+  "transcript": null
+ },
+ "source_transcript_payload": null
+}

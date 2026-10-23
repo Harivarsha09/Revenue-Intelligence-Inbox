@@ -1,0 +1,165 @@
+{
+ "source_type": "meeting",
+ "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "internal"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "internal"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/internal/M10__337f297d__internal-note.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+  "title": "Billing workflow walkthrough",
+  "starts_at": "2026-08-21T07:30:00Z",
+  "ends_at": "2026-08-21T08:35:00Z",
+  "duration_seconds": 1428,
+  "provider": "google_meet",
+  "join_url": "https://meet.example.invalid/337f297d-9385-5b82-9e54-5019c1ed912c",
+  "organizer_email": "team12@example.com",
+  "attendee_count": 3,
+  "recording_status": "recorded",
+  "recording_detail": null,
+  "recording_id": "46c24775-b8c1-5dff-b300-a17b9243ad79",
+  "has_transcript": true,
+  "has_video": true,
+  "summary": null,
+  "summary_status": "stored",
+  "redacted": true
+ },
+ "source_transcript_payload": {
+  "meeting_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+  "turns": [
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 65.40305,
+    "timecode": "00:01:05",
+    "text": "I am finishing another call. Give me a couple of minutes and I will be back for the session."
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 120.426125,
+    "timecode": "00:02:00",
+    "text": "I do not think the optional attendee is joining. We can wait for the trainer to return."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 304.098,
+    "timecode": "00:05:04",
+    "text": "Yesterday we covered the subscription side of billing. Any questions before I show the remaining part, how invoices are generated and cleared?"
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 316.09,
+    "timecode": "00:05:16",
+    "text": "I have access to a demo account as an administrator, but I do not have the back-office super-admin access you mentioned."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 344.65,
+    "timecode": "00:05:44",
+    "text": "Okay. That is a different application. Operations uses it to create accounts, control enabled features and manage billing. I will show what it looks like, rather than ask you to create an invoice yourself."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 397.75598,
+    "timecode": "00:06:37",
+    "text": "Remember the subscription can include fixed, variable and one-time components. There may also be usage charges. When a customer chooses a plan, operations creates the invoice with the customer and plan details."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 436.912,
+    "timecode": "00:07:16",
+    "text": "The nominal due period is seven days, but we sometimes give the customer until the end of the month. When you report payments, an invoice dated in an earlier month might have been cleared later, so check the dates rather than assuming they match."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 520.69995,
+    "timecode": "00:08:40",
+    "text": "There is a further exception for invoices raised in the last week of the month: the customer may be allowed until the middle of the next month. If that period is exceeded, we may void and reissue. The displayed due date and the allowed collection period are not always the same thing."
+   },
+   {
+    "speaker": "Team member C",
+    "starts_at_seconds": 593.9626,
+    "timecode": "00:09:53",
+    "text": "Understood. That explains why the invoice month alone does not tell us when the cash arrived."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 596.86,
+    "timecode": "00:09:56",
+    "text": "You can add a one-time customisation line as well as the subscription. If only half is being collected upfront, the invoice should describe that instalment instead of making it look like the whole charge."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 641.01,
+    "timecode": "00:10:41",
+    "text": "The tax presentation can be one integrated line or split components depending on the entity information. The demonstration changes when I update that field. This is part of the configuration the operations team needs to get right."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 787.86194,
+    "timecode": "00:13:07",
+    "text": "After the first payment, we configure the billing cycle for the account. Monthly, quarterly and annual customers do not all receive the same subscription charge every month."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 902.89197,
+    "timecode": "00:15:02",
+    "text": "You will also see zero-value invoices. If a periodic invoice has no subscription charge due and no extra usage component, its value can be zero. That is not automatically a missing payment."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 948.33203,
+    "timecode": "00:15:48",
+    "text": "For the automated engine, invoice generation is at midnight in the customer's local time, with a later scheduled attempt to deduct the balance. Manual invoices are separate. There is a gap between generating an invoice and clearing it."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 948.33203,
+    "timecode": "00:15:48",
+    "text": "Suppose the invoice is INR 6,240 but the wallet contains INR 6,110. The deduction fails and a notification goes out. The system tries three times. Adding money afterwards does not mean it was available when that earlier attempt happened."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1144.893,
+    "timecode": "00:19:04",
+    "text": "On the third day it tries again, but spending may have reduced the wallet balance. The next attempt can fail too. It repeats on the seventh day, now with a warning that another failure will freeze the account. The account manager receives the notices and can follow up before that point."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1224.2269,
+    "timecode": "00:20:24",
+    "text": "On the tenth day, if there is enough money, the invoice clears and the next billing date moves forward. If it still fails, payments and cards can be blocked, and the billing date stays stuck. Simply topping up a frozen account does not complete the whole recovery flow in this process."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1224.2269,
+    "timecode": "00:20:24",
+    "text": "The customer must tell us, then operations clears the outstanding invoice and unfreezes the account. Operations also needs to adjust the next billing date manually. Clearing the payment without checking that date can leave the next cycle wrong."
+   },
+   {
+    "speaker": "Team member B",
+    "starts_at_seconds": 1364.9149,
+    "timecode": "00:22:44",
+    "text": "No further question from me on that part."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1366.467,
+    "timecode": "00:22:46",
+    "text": "I will request the back-office access separately for the next training session. If questions come up when you review the billing examples, send them over and we will take them up."
+   }
+  ],
+  "unavailable_reason": null
+ }
+}

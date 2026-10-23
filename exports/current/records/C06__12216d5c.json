@@ -1,0 +1,54 @@
+{
+ "source_type": "call",
+ "source_id": "12216d5c-e254-52c6-b344-47de4c6e1ae5",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "closed",
+  "coaching"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "closed",
+  "coaching"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/closed/C06__12216d5c__closed-note.md",
+  "routes/coaching/C06__12216d5c__coaching.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "12216d5c-e254-52c6-b344-47de4c6e1ae5",
+  "external_call_id": "EXT-00026",
+  "workspace_slug": "workspace-03",
+  "rep_email": "meera@example.com",
+  "rep_name": "Meera",
+  "rep_user_id": "f90ff541-3566-5786-8855-b598d1cd48ff",
+  "direction": "outbound",
+  "direction_raw": "outbound",
+  "from_number": "PHONE-024",
+  "to_number": "PHONE-026",
+  "started_at": "2026-08-21T12:31:11Z",
+  "duration_seconds": 153,
+  "talk_time_seconds": 153,
+  "speaker_count": 2,
+  "segment_count": 24,
+  "is_connected": true,
+  "is_conversation": true,
+  "observed_outcome": "uninterested",
+  "classification_reason": null,
+  "classification_status": "stored",
+  "is_campaign_call": true,
+  "first_dial_ever": true,
+  "first_connect_ever": true,
+  "prior_dials_ever": 0,
+  "prior_connects_ever": 0,
+  "summary": null,
+  "summary_status": "stored",
+  "transcript": "Hello? Good evening, Mr Nikhil. Good evening. Ravi here. I'll say at the start that this is a cold call. Could I take about forty seconds to explain the purpose? If it isn't relevant, you can end the call. What is it about? I'll keep it short. We work with retail and distribution businesses that want to replace manual handling of store expenses and supplier payments. SpendNest brings invoices, vendor payments and documents into one dashboard. You can see which location is spending what, manage different branches together and separate expenses by department. The idea is to give management visibility while making approvals and payment releases easier for finance and operations. We already have many of those things in place. If there is something we need from you in future, we can contact you. Of course. One final question, so others from our organisation don't keep bothering you about something you already have: I understand you have more than a hundred and twenty stores. Do managers use company cards, or are local expenses handled through cash advances? We have quite a lot of automation, with a mixed model where needed. The essential processes are automated and connected through our business management system. Head office manages it, and we have full visibility. That is why I said the arrangements are already in place. If a particular need comes up later, we will reach out. All right. With our cards and instant payments, we provide similar visibility—there is also a separate department here monitoring this every day. Understood. Thank you for explaining, and thank you for your time. Thanks. Goodbye."
+ },
+ "source_transcript_payload": null
+}

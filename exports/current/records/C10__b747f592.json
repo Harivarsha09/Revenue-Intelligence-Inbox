@@ -1,0 +1,54 @@
+{
+ "source_type": "call",
+ "source_id": "b747f592-810e-583c-9b81-8db5ab035806",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "deal",
+  "coaching"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "deal",
+  "coaching"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/deal/C10__b747f592__next-steps.md",
+  "routes/coaching/C10__b747f592__coaching.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "b747f592-810e-583c-9b81-8db5ab035806",
+  "external_call_id": "EXT-00030",
+  "workspace_slug": "workspace-03",
+  "rep_email": "meera@example.com",
+  "rep_name": "Meera",
+  "rep_user_id": "f90ff541-3566-5786-8855-b598d1cd48ff",
+  "direction": "outbound",
+  "direction_raw": "outbound",
+  "from_number": "PHONE-024",
+  "to_number": "PHONE-031",
+  "started_at": "2026-08-21T11:21:15Z",
+  "duration_seconds": 109,
+  "talk_time_seconds": 109,
+  "speaker_count": 2,
+  "segment_count": 21,
+  "is_connected": true,
+  "is_conversation": true,
+  "observed_outcome": "follow_up",
+  "classification_reason": null,
+  "classification_status": "stored",
+  "is_campaign_call": true,
+  "first_dial_ever": true,
+  "first_connect_ever": true,
+  "prior_dials_ever": 0,
+  "prior_connects_ever": 0,
+  "summary": null,
+  "summary_status": "stored",
+  "transcript": "Hello? Hello, good evening, Mr Aniket. Yes? Meera here. Could I briefly explain why I'm calling? What is this about? We work with companies that want to move vendor handling and invoice processing away from manual steps. SpendNest brings together scheduled payments and approval workflows so managers can see more of what is happening across operations and finance. Are you calling about Meadowbrick? Yes, that's right. I don't work there anymore. I'm sorry about that. Are you with a different organisation now? Yes. Is it in the same sector, or have you moved into a different area? It is different. Manufacturing. Understood. We also work with manufacturing businesses, because expense management can help—why don't you just send me a brief on the messaging app? I'll look at it and come back to you. Certainly. To make it relevant, would accounts payable and supplier management be the part to focus on, or—send an explanation of what you do. I will get back to you. All right, I'll do that. Would a follow-up call on Monday or Tuesday next week be okay, in case you have any questions? No. I said I will contact you if there is anything to discuss. Understood. Thank you for your time, Mr Aniket. Thank you. Take care. Goodbye."
+ },
+ "source_transcript_payload": null
+}

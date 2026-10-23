@@ -1,0 +1,246 @@
+{
+ "source_type": "meeting",
+ "source_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+ "applied_revision": 1,
+ "batch_id": "initial-001",
+ "suggested_routes": [
+  "deal",
+  "coaching"
+ ],
+ "suggested_by": "pre-generated analysis (current)",
+ "active_routes": [
+  "deal",
+  "coaching"
+ ],
+ "manual_override": null,
+ "intake_state": "analysed",
+ "analysis_freshness": "current",
+ "outputs": [
+  "routes/deal/M06__657b9e9d__next-steps.md",
+  "routes/coaching/M06__657b9e9d__coaching.md"
+ ],
+ "proposed_related_records_title_match_only": [],
+ "source_payload": {
+  "id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+  "title": "Mapletrail Services / SpendNest discussion",
+  "starts_at": "2026-08-21T06:30:00Z",
+  "ends_at": "2026-08-21T07:00:00Z",
+  "duration_seconds": 2197,
+  "provider": "google_meet",
+  "join_url": "https://meet.example.invalid/657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+  "organizer_email": "team10@example.com",
+  "attendee_count": 1,
+  "recording_status": "recorded",
+  "recording_detail": null,
+  "recording_id": "2e377ea4-e721-56c7-900b-5a796adaafa4",
+  "has_transcript": true,
+  "has_video": true,
+  "summary": null,
+  "summary_status": "pending",
+  "redacted": true
+ },
+ "source_transcript_payload": {
+  "meeting_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+  "turns": [
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 146.89867,
+    "timecode": "00:02:26",
+    "text": "Good to speak after connecting professionally. I work on finance at SpendNest, and part of my interest is how finance teams spend their time. We have expense workflows and are also working on receivables automation. I would like to understand your role before jumping into the product."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 287.17508,
+    "timecode": "00:04:47",
+    "text": "I handle finance for one branch of Mapletrail Services. We do software development and testing. The main office supports me, but locally I cover a broad set of tasks rather than having a separate team for each function."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 343.8236,
+    "timecode": "00:05:43",
+    "text": "How large is finance at the main office? Is that a team you work with daily?"
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 347.6251,
+    "timecode": "00:05:47",
+    "text": "Roughly 65 people across finance. The business is sizeable, but locally I am the person dealing with the operational questions and getting support from them."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 366.55164,
+    "timecode": "00:06:06",
+    "text": "Are there plans to add people in your branch, or is the present setup expected to continue?"
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 371.4911,
+    "timecode": "00:06:11",
+    "text": "No expansion planned at the moment. Most operations sit centrally. I look after local payables, receivables, revenue and compliance-related work."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 581.9404,
+    "timecode": "00:09:41",
+    "text": "For supplier payments there is a dedicated team. They manage the purchase-order-to-payment process through our ERP and bank connections. Different people cover payables, receivables and compliance."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 667.35376,
+    "timecode": "00:11:07",
+    "text": "On receivables, how many invoices do you personally handle, and what happens between preparing one and getting paid?"
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 677.0151,
+    "timecode": "00:11:17",
+    "text": "I cover around eight clients. I speak to delivery managers about what was delivered, check the contract and resource rates, prepare the invoice and get confirmation. Then we send it to the client. Depending on the contract there may be 15- or 30-day terms before the collection follow-up starts."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 744.4531,
+    "timecode": "00:12:24",
+    "text": "When something remains unpaid, the collections team comes back to the delivery manager or to whoever issued it. One expense-recovery invoice has been outstanding for months even though the same client pays the normal service invoices. We still need the delivery manager to establish why that particular item is held up."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 810.13513,
+    "timecode": "00:13:30",
+    "text": "Across the company, roughly how many invoices are we talking about? I mean both the count and the value, if you have an estimate."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 837.23914,
+    "timecode": "00:13:57",
+    "text": "Around 65–78 customers. There may be several projects for each. Initially I would estimate 260–390 invoices a month, with a large total value."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 874.2348,
+    "timecode": "00:14:34",
+    "text": "Sorry, I may have mixed up the value and count. Were you saying only a few invoices for all that revenue, or several invoices for each customer each month?"
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 885.603,
+    "timecode": "00:14:45",
+    "text": "Several for each customer, each month. I was not saying that the entire company only sends a handful of invoices."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 904.20483,
+    "timecode": "00:15:04",
+    "text": "So perhaps nearer 390–520 a month overall?"
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 909.21704,
+    "timecode": "00:15:09",
+    "text": "Approximately. The value is the bigger point, and many are in foreign currency. These are rough numbers in this conversation, not a report I have open."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 926.5648,
+    "timecode": "00:15:26",
+    "text": "It sounds like the manual work is reviewing the contract, checking with delivery and repeatedly following up with the customer. That is the part our collection automation is intended to help with."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 978.3748,
+    "timecode": "00:16:18",
+    "text": "The approach would first understand your process and connect to the relevant systems. The agent would use invoice records, previous emails and the relationship context when preparing a follow-up. It should not just send the same reminder to everyone regardless of the last discussion."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1089.9248,
+    "timecode": "00:18:09",
+    "text": "Different customers use different communication channels and escalation contacts. We would define that sequence with you: who to contact first, how long to wait, and who receives an escalation if there is no response."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1152.1064,
+    "timecode": "00:19:12",
+    "text": "Yes, I follow. That exception would need someone to look at it."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1152.1248,
+    "timecode": "00:19:12",
+    "text": "That should become an exception for a person to review. The agent could point to the relevant contract terms and explain the disputed point. The idea is to put focused actions in front of finance, while also showing expected collections. Those are capabilities we would configure around the process, not a reason to remove human judgment."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1279.9209,
+    "timecode": "00:21:19",
+    "text": "Cash application is another area. For example, if an invoice is INR 1.3 lakh and the payment is INR 1.17 lakh, the difference could be withholding, bank fees or an unresolved dispute. Matching the receipt is not enough; the team needs to know why the difference exists."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1368.7019,
+    "timecode": "00:22:48",
+    "text": "So the repetitive work goes to the system, with the final judgment still coming back to finance?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1375.3228,
+    "timecode": "00:22:55",
+    "text": "Exactly. Do you see scope for that in the current process at Mapletrail Services?"
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 1387.4939,
+    "timecode": "00:23:07",
+    "text": "At present people still track contract terms and bank receipts manually. Automation could save time, especially when we have to wait for one contact and then follow up through another. But the dedicated central team handles much of this today."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1490.2441,
+    "timecode": "00:24:50",
+    "text": "That is the goal: give finance time to analyse and make decisions rather than spending everything on chasing and checking. We would need to understand the actual workflow in more detail."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1547.6621,
+    "timecode": "00:25:47",
+    "text": "We also have the expense side: cards with limits, department budgets and merchant controls, along with supplier payments and reimbursements. A virtual card can be restricted to the particular subscription or purpose for which it was issued."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1687.9208,
+    "timecode": "00:28:07",
+    "text": "Those cards use a shared funded wallet. Receipts and memos remain attached to transactions, and accounting fields can be mapped before syncing. That gives a record of who did what and the supporting documents, rather than only a bank entry."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 1799.2211,
+    "timecode": "00:29:59",
+    "text": "For payables, invoices can be captured from uploaded documents or an inbox and go through approval levels. The exact integration and payment flow would need to fit the systems you already use. I can send material about both this and the receivables side."
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2020.0251,
+    "timecode": "00:33:40",
+    "text": "After reviewing it, I would be interested in your view on what is useful for your company. Is there anything else you want to clarify today?"
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 2067.7349,
+    "timecode": "00:34:27",
+    "text": "Confidentiality is important. Payment information is sensitive. How is that protected, and is there a risk of somebody interfering with it?"
+   },
+   {
+    "speaker": "Team member A",
+    "starts_at_seconds": 2083.3718,
+    "timecode": "00:34:43",
+    "text": "We have security and compliance controls and certifications around the platform. I understand why you ask; the information is sensitive. I can share the material on our setup as part of the follow-up."
+   },
+   {
+    "speaker": "Customer A",
+    "starts_at_seconds": 2133.226,
+    "timecode": "00:35:33",
+    "text": "It has been useful hearing a different perspective. Please send the information and we can stay in touch."
+   }
+  ],
+  "unavailable_reason": null
+ }
+}

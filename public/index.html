@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Revenue Intelligence Inbox</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#16222d;--mute:#5b6b7a;--line:#dde3e9;--accent:#0b6b8a;--accent-d:#084f66;--warn:#b45309;--warnbg:#fef3dc;--ok:#166a3c;--okbg:#e2f4e8;--bad:#a12a2a;--badbg:#fbe6e6;--mark:#fff1a8}
+@media(prefers-color-scheme:dark){:root{--bg:#0f161d;--card:#18222c;--ink:#e6edf3;--mute:#9bacbb;--line:#2a3846;--accent:#4db3d3;--accent-d:#7cc8e0;--warn:#f0b35a;--warnbg:#3a2c12;--ok:#6fd49a;--okbg:#14301f;--bad:#f08a8a;--badbg:#3a1b1b;--mark:#5b4d10}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--card);border-bottom:1px solid var(--line);padding:14px 24px;display:flex;gap:24px;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:5}
+h1{font-size:18px;margin:0;letter-spacing:-.2px}.chip{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:2px 10px;color:var(--mute);background:var(--bg)}
+nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}nav button{border:0;background:none;color:var(--mute);font:inherit;padding:6px 12px;border-radius:8px;cursor:pointer}nav button.on{background:var(--accent);color:#fff}
+main{max-width:1180px;margin:0 auto;padding:20px 24px 80px}h2{font-size:16px;margin:0 0 10px}h3{font-size:14px;margin:16px 0 6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:16px}
+.grid{display:grid;gap:16px}.g4{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(380px,1fr))}
+.kpi .n{font-size:30px;font-weight:650;font-variant-numeric:tabular-nums;letter-spacing:-.5px}.kpi .l{font-weight:600}.kpi .d{color:var(--mute);font-size:12.5px;margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:14px}th{text-align:left;color:var(--mute);font-weight:600;font-size:12.5px;border-bottom:1px solid var(--line);padding:6px 8px}td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.click{cursor:pointer}tr.click:hover td{background:var(--bg)}tr.sel td{background:var(--bg)}
+.tag{display:inline-block;font-size:12px;border-radius:6px;padding:1px 7px;margin:0 3px 3px 0;background:var(--bg);border:1px solid var(--line);white-space:nowrap}
+.tag.m{background:var(--warnbg);color:var(--warn);border-color:transparent;font-weight:600}.tag.ok{background:var(--okbg);color:var(--ok);border-color:transparent}.tag.bad{background:var(--badbg);color:var(--bad);border-color:transparent}.tag.w{background:var(--warnbg);color:var(--warn);border-color:transparent}
+.bar{display:flex;align-items:center;gap:8px;margin:3px 0;font-size:13px}.bar i{display:block;height:10px;background:var(--accent);border-radius:3px}.bar span:first-child{width:150px;color:var(--mute)}
+select,input[type=text],input[type=search]{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+button.b{font:inherit;padding:7px 14px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}button.b.s{background:var(--card);color:var(--accent)}button.b.d{border-color:var(--bad);color:var(--bad);background:var(--card)}button.b:disabled{opacity:.5}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}.mute{color:var(--mute)}.small{font-size:12.5px}
+#drawer{position:fixed;top:0;right:0;width:min(640px,100vw);height:100vh;background:var(--card);border-left:1px solid var(--line);box-shadow:-8px 0 24px rgba(0,0,0,.12);overflow:auto;padding:18px 20px 60px;transform:translateX(105%);transition:transform .18s;z-index:10}#drawer.open{transform:none}
+.x{float:right;background:none;border:0;font-size:22px;cursor:pointer;color:var(--mute)}
+.turn{padding:6px 8px;border-left:3px solid var(--line);margin:4px 0;font-size:14px}.turn b{font-size:12px;color:var(--mute)}.turn.hl,mark.hl{background:var(--mark);border-left-color:var(--warn)}mark{background:#ffe97a55;color:inherit;border-radius:3px;padding:0 1px}
+.ev{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;margin:4px 0;cursor:pointer;font:inherit;color:var(--ink)}.ev:hover{border-color:var(--accent)}
+.box{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px 0}details summary{cursor:pointer;color:var(--accent);margin:8px 0}
+pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--bg);padding:8px;border-radius:8px;max-height:260px;overflow:auto}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:10px;z-index:20;max-width:90vw}
+ol.brief li{margin:8px 0}a.lk{color:var(--accent);cursor:pointer;text-decoration:underline dotted}
+</style></head><body>
+<header><h1>Revenue Intelligence Inbox</h1><span class="chip">Selected records · Fri 21 Aug 2026 · Asia/Kolkata</span>
+<nav id="nav"></nav></header>
+<main id="view"></main><aside id="drawer"></aside><div id="toast" class="toast" hidden></div>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const S={tab:'dash',data:null,m:null,f:{person:'all',type:'all'},route:'all',q:'',sel:null,exp:null,last:null};
+const TABS=[['dash','Dashboard'],['inbox','Inbox'],['brief','Manager brief'],['ops','Imports & export'],['defs','Definitions']];
+const STATE_LABEL={analysed:'Analysed',analysis_pending:'Analysis pending',logged_no_text:'Logged · no text',needs_review:'Needs review',awaiting_transcript:'Awaiting transcript'};
+const CLS={analysed:'ok',needs_review:'w',awaiting_transcript:'w',analysis_pending:'w',logged_no_text:''};
+async function api(m,u,b){const r=await fetch(u,{method:m,headers:{'Content-Type':'application/json'},body:b?JSON.stringify(b):undefined});const j=await r.json();if(!r.ok)throw new Error(j.error||r.status);return j}
+function toast(t){const e=$('#toast');e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,4200)}
+async function refresh(d){S.data=d||await api('GET','/api/state');S.m=await api('GET',`/api/metrics?person=${encodeURIComponent(S.f.person)}&type=${S.f.type}`);render()}
+const pct=(n,d)=>d?(Math.round(n/d*1000)/10)+'%':'n/a';
+const routeTags=v=>v.routes.map(r=>`<span class="tag ${v.manual?'m':''}">${esc(S.data.routes[r].label)}</span>`).join('')+(v.manual?'<span class="tag m">manual</span>':'');
+const stTag=v=>`<span class="tag ${CLS[v.intake]||''}">${STATE_LABEL[v.intake]}</span>`;
+const flagTags=v=>v.flags.filter(f=>f!=='override').map(f=>({stale:'<span class="tag bad">stale analysis</span>',label_challenged:'<span class="tag w">label challenged</span>',cluster:'<span class="tag w">repeat counterparty</span>',conn_no_text:'<span class="tag w">connected, no text</span>',related:'<span class="tag">proposed related</span>'}[f]||'')).join('');
+const filtered=()=>S.data.records.filter(v=>(S.f.type==='all'||v.type===S.f.type)&&(S.f.person==='all'||v.person.id===S.f.person));
+
+function filterBar(){
+ const ppl={};S.data.records.forEach(v=>ppl[v.person.id]=v.person);const opt=role=>Object.values(ppl).filter(p=>p.role===role).sort((a,b)=>a.label.localeCompare(b.label)).map(p=>`<option value="${esc(p.id)}" ${S.f.person===p.id?'selected':''}>${esc(p.label)}</option>`).join('');
+ return `<div class="row"><label>Person <select id="fp"><option value="all">All people</option><optgroup label="Call reps (calls only)">${opt('Call rep')}</optgroup><optgroup label="Meeting organisers (meetings only)">${opt('Meeting organiser')}</optgroup></select></label>
+ <label>Source type <select id="ft">${['all','call','meeting'].map(t=>`<option ${S.f.type===t?'selected':''}>${t}</option>`).join('')}</select></label>
+ <span class="mute small">A call rep and a meeting organiser are different roles; an organiser is not assumed to be a salesperson or attendee.</span></div>`}
+function bindFilter(){$('#fp').onchange=e=>{S.f.person=e.target.value;if(S.f.person.startsWith('rep:'))S.f.type='call';if(S.f.person.startsWith('org:'))S.f.type='meeting';refresh(S.data)};$('#ft').onchange=e=>{S.f.type=e.target.value;if(S.f.type==='call'&&S.f.person.startsWith('org:'))S.f.person='all';if(S.f.type==='meeting'&&S.f.person.startsWith('rep:'))S.f.person='all';refresh(S.data)}}
+
+function dash(){
+ const m=S.m,d=S.data;
+ if(!d.records.length)return `<div class="card"><h2>No data imported yet</h2><p>Open <b>Imports &amp; export</b> and press <b>Load demo (both batches)</b>, or import the initial batch to follow the replay steps.</p></div>`;
+ const maxH=Math.max(...Object.values(m.hours),1);
+ const attention=filtered().filter(v=>['needs_review','awaiting_transcript','analysis_pending'].includes(v.intake)||v.flags.some(f=>['label_challenged','stale','override'].includes(f)));
+ const cl=attention.filter(v=>v.flags.includes('cluster')),rest=attention.filter(v=>!v.flags.includes('cluster'));
+ const why=v=>v.flags.includes('label_challenged')?'Stored label disagrees with the text':v.flags.includes('stale')?'Source text changed; analysis stale':v.manual?'Manual route in effect':v.suggested.reason;
+ return filterBar()+`
+ <div class="grid g4">
+ <div class="card kpi"><div class="l">Selected records</div><div class="n">${m.selected}</div><div class="d">${m.calls} calls · ${m.meetings} meetings. Distinct (source_type, source_id) after revisions; a repeated import adds nothing. A selected sample, not a whole-team day.</div></div>
+ <div class="card kpi"><div class="l">Usable text coverage</div><div class="n">${pct(m.coverage.n,m.coverage.d)}</div><div class="d">${m.coverage.n} of ${m.coverage.d} records have a nonblank call transcript or ≥1 nonblank meeting turn. Calls ${m.coverage.calls.n}/${m.coverage.calls.d} · meetings ${m.coverage.meetings.n}/${m.coverage.meetings.d}.</div></div>
+ <div class="card kpi"><div class="l">Source-reported connection rate</div><div class="n">${pct(m.connection.n,m.connection.d)}</div><div class="d">${m.connection.n} of ${m.connection.d} calls with is_connected=true (unknown: ${m.connection.unknown}). A stored label, not checked against text. Text-based check: ${m.substantive.n} of ${m.substantive.d} transcribed calls were two-way business conversations; the source calls ${m.substantive.sourceSays} of them conversations.</div></div>
+ <div class="card kpi"><div class="l">Routing and review</div><div class="n">${m.assignments}<span class="mute" style="font-size:16px"> routes</span></div><div class="d">${m.assignments} route assignments over ${m.selected} unique records (multi-route records count once per route). Manual overrides: ${m.manualOverrides}. Labels challenged: ${m.labelsChallenged}. Stale analyses: ${m.stale}.</div></div>
+ </div>
+ <div class="grid g2">
+ <div class="card"><h2>Activity by person · 21 Aug 2026 (IST)</h2><table><tr><th>Person</th><th>Role</th><th>Records</th><th>With text</th><th>Source-connected</th><th>Need attention</th></tr>
+ ${m.people.map(p=>`<tr class="click" data-p="${esc(p.id)}"><td><b>${esc(p.label)}</b></td><td>${p.role}</td><td>${p.records}</td><td>${p.withText}</td><td>${p.role==='Call rep'?p.connected:'–'}</td><td>${p.attention||'–'}</td></tr>`).join('')}</table>
+ <p class="small mute">Click a person to filter, then open the Inbox for their records. Connected counts apply to calls only.</p>
+ <h3>Activity by hour (IST, start time)</h3>${Object.keys(m.hours).sort().map(h=>`<div class="bar"><span>${h}:00</span><i style="width:${m.hours[h]/maxH*220}px"></i><span>${m.hours[h]}</span></div>`).join('')}<p class="small mute">Late-evening IST bars say nothing about after-hours work: prospect time zones are not supplied (one transcript greets 'good morning' at 23:14 IST).</p></div>
+ <div class="card"><h2>Routes (active)</h2>${Object.entries(m.routeUnique).sort((a,b)=>b[1]-a[1]).map(([r,n])=>`<div class="bar"><span><a class="lk" data-r="${r}">${esc(d.routes[r].label)}</a></span><i style="width:${n*10}px"></i><span>${n}</span></div>`).join('')}
+ <p class="small mute">Counts are records per route; the hint for each route is in Definitions. Intake states: ${Object.entries(m.intake).map(([k,n])=>`${STATE_LABEL[k]} ${n}`).join(' · ')}.</p></div>
+ </div>
+ <div class="card"><h2>Needs attention (${rest.length+(cl.length?1:0)})</h2><table><tr><th>Ref</th><th>What</th><th>Why</th></tr>
+ ${cl.length?`<tr class="click" data-k="${cl[0].key}"><td><b>${cl.map(v=>v.ref).join(', ')}</b></td><td>${cl.length} text-less calls, one counterparty number, ~6 minutes</td><td>${esc(cl[0].suggested.reason)}</td></tr>`:''}
+ ${rest.map(v=>`<tr class="click" data-k="${v.key}"><td><b>${v.ref}</b></td><td>${esc(v.title)} ${stTag(v)}</td><td>${esc(why(v))}</td></tr>`).join('')}</table></div>`}
+
+function inbox(){
+ let rows=filtered().filter(v=>S.route==='all'||v.routes.includes(S.route)).filter(v=>!S.q||(v.ref+' '+v.title+' '+v.person.label).toLowerCase().includes(S.q.toLowerCase()));
+ return filterBar()+`<div class="row"><label>Route <select id="fr"><option value="all">All routes</option>${Object.entries(S.data.routes).map(([k,r])=>`<option value="${k}" ${S.route===k?'selected':''}>${r.label}</option>`).join('')}</select></label><input type="search" id="fq" placeholder="Search ref, title, person" value="${esc(S.q)}"><span class="mute small">${rows.length} records shown</span></div>
+ <div class="card" style="padding:6px 8px"><table><tr><th>Ref</th><th>Type</th><th>IST</th><th>Who</th><th>Conversation</th><th>State</th><th>Routes</th></tr>
+ ${rows.map(v=>`<tr class="click ${S.sel===v.key?'sel':''}" data-k="${v.key}"><td><b>${v.ref}</b></td><td>${v.type}</td><td>${v.time}</td><td>${esc(v.person.label)}</td><td>${esc(v.title)}<div>${flagTags(v)}</div></td><td>${stTag(v)}<div class="small mute">rev ${v.revision}</div></td><td>${routeTags(v)}</td></tr>`).join('')}</table></div>`}
+
+async function brief(){
+ const {brief:B}=await api('GET','/api/brief'),R=Object.fromEntries(S.data.records.map(v=>[v.ref,v])),m=await api('GET','/api/metrics?person=all&type=all');
+ const link=e=>`<a class="lk" data-o="${e.ref}" data-t="${e.t||''}" data-q="${esc(e.q||'')}">${e.ref}${e.t?' turn '+e.t:' “'+esc((e.q||'').slice(0,40))+'…”'}</a>`;
+ const sec=(h,k)=>`<div class="card"><h2>${h}</h2><ol class="brief">${B[k].map(it=>{const pend=(it.needs||[]).some(r=>!R[r]||!R[r].hasAnalysis);return `<li>${pend?'<span class="tag w">pending: source text not imported yet</span> ':''}${esc(it.text)} ${(it.ev||[]).map(link).join(' · ')}</li>`}).join('')}</ol></div>`;
+ return `<div class="card"><h2>${esc(B.title)}</h2><p><b>Activity (computed live, unfiltered):</b> ${m.selected} selected records (${m.calls} calls, ${m.meetings} meetings); usable text ${m.coverage.n}/${m.coverage.d}; source-reported connected ${m.connection.n}/${m.connection.d} calls.</p><p class="small mute">The analysis below is pre-generated and bound to specific source text; items needing a record whose text is missing or changed are flagged instead of shown as current. Scope: selected records only.</p></div>`
+  +sec('Important conversations','important')+sec('Follow-up priorities (ranked)','followups')+sec('Practical coaching','coaching')+sec('Data cautions','cautions')}
+
+function ops(){
+ const L=S.data.importLog,e=S.exp;
+ return `<div class="card"><h2>Imports</h2><div class="row"><button class="b" id="demo">Load demo (both batches)</button><button class="b s" id="i1">Import initial</button><button class="b s" id="i1s">Import initial (shuffled order)</button><button class="b s" id="i2">Import update</button><label class="b s" style="cursor:pointer">Import file…<input type="file" id="fi" accept=".json" hidden></label><button class="b d" id="rs">Reset (clean start)</button></div>
+ <p class="small mute">Identity is (source_type, source_id). A higher revision replaces the whole source record; same or older revisions are ignored. Manual routes live in a separate store and survive imports and restarts. Replay order from the brief: initial → initial shuffled → change M07's route (Inbox) → update → initial again → refresh.</p>
+ <table><tr><th>Batch</th><th>Rev</th><th>Shuffled</th><th>Received</th><th>Added</th><th>Replaced</th><th>Ignored</th><th>Unique records after</th></tr>${L.slice().reverse().map(x=>`<tr><td>${esc(x.batch_id)}</td><td>${x.revision}</td><td>${x.shuffled?'yes':'no'}</td><td>${x.received}</td><td>${x.added}</td><td>${x.replaced}${x.replacedRefs.length?' ('+x.replacedRefs.join(',')+')':''}</td><td>${x.ignored}</td><td><b>${x.totalRecords}</b></td></tr>`).join('')||'<tr><td colspan=8 class="mute">No imports yet</td></tr>'}</table></div>
+ <div class="card"><h2>Export</h2><div class="row"><button class="b" id="ex">Write export folder + manifest</button><a class="b s" style="text-decoration:none" href="/api/export.zip" download="revenue-inbox-export.zip">Download ZIP</a></div>
+ <p class="small mute">Writes <code>exports/current/</code> from current state (regenerated each time, so a changed route never leaves an obsolete active file).</p>
+ ${e?`<p><b>${e.files.length} files</b> in <code>${esc(e.dir)}</code> · ${e.manifest.unique_source_records} unique records · ${e.manifest.route_assignments} route assignments</p><pre>${esc(e.files.filter(f=>!f.startsWith('records/')).join('\n'))}\n… plus ${e.files.filter(f=>f.startsWith('records/')).length} records/*.json</pre>
+ <details open><summary>Manifest preview (manifest.json / manifest.csv)</summary><table><tr><th>Ref</th><th>Rev</th><th>Active routes</th><th>Manual</th><th>State</th><th>Freshness</th><th>Output</th></tr>${e.manifest.records.map(r=>`<tr><td>${r.record_ref}</td><td>${r.applied_source_revision}</td><td>${r.active_routes.join('+')}</td><td>${r.manual_override?'yes':''}</td><td>${r.processing_review_state}</td><td>${esc(r.analysis_freshness)}</td><td class="small">${esc(r.output_paths.join(', '))}</td></tr>`).join('')}</table></details>`:''}</div>`}
+
+function defs(){return `<div class="card"><h2>Metric definitions</h2><table>
+<tr><th>Metric</th><th>Numerator</th><th>Denominator</th><th>Caveat</th></tr>
+<tr><td>Selected records</td><td colspan=2>Distinct (source_type, source_id) after applying revisions</td><td>Selected sample, not a team day. Never the original API search total. Repeated imports add nothing.</td></tr>
+<tr><td>Usable text coverage</td><td>Calls with nonblank transcript + meetings with ≥1 nonblank turn</td><td>Selected records in the same filter</td><td>A missing transcript does not mean the conversation did not happen.</td></tr>
+<tr><td>Source-reported connection rate</td><td>Calls with is_connected = true</td><td>Calls with non-null is_connected</td><td>Stored upstream label, not independent truth. Unknown count shown.</td></tr>
+<tr><td>Transcript-based conversation check</td><td>Transcribed calls judged a two-way business conversation</td><td>Calls with current analysis (text subset)</td><td>Different measure from the stored one; never merged with it.</td></tr>
+<tr><td>Route assignments</td><td>Sum of active routes over records</td><td>Unique records</td><td>Can exceed unique records because a conversation may have several routes.</td></tr>
+<tr><td>Activity by person</td><td colspan=2>Calls grouped by rep_email; meetings by organizer_email (shown separately)</td><td>Organiser ≠ attendee ≠ salesperson. Durations are not summed.</td></tr>
+<tr><td>Dates</td><td colspan=2>Asia/Kolkata. Calls use started_at; meetings starts_at. exported_at is delivery time.</td><td>All 44 fall on 21 Aug 2026 IST, so a date filter would do nothing.</td></tr></table></div>
+<div class="card"><h2>Routes</h2><table><tr><th>Route</th><th>Used when</th></tr>${Object.values(S.data.routes).map(r=>`<tr><td><b>${r.label}</b></td><td>${esc(r.hint)}</td></tr>`).join('')}</table>
+<p class="small mute">Suggested routes come from pre-generated analysis (text records, valid only while the source text is unchanged) or from deterministic rules (records without text). A manual route always wins until reset.</p></div>
+<div class="card"><h2>What is pre-generated vs computed</h2><p>Pre-generated: the 18 per-conversation analyses and the 21 Aug brief wording (analysis/analysis.src.json). Computed at runtime: identity/revision handling, usable-text flags, freshness (text hash vs analysis hash), rule-based routes for text-less records, repeat-counterparty detection, every metric, evidence verification (quotes and turn numbers are checked against the live text), and the export.</p></div>`}
+
+async function drawer(key,hl){
+ const v=await api('GET','/api/record?key='+encodeURIComponent(key));S.sel=key;const a=v.analysis,p=v.payload;
+ const rt=Object.entries(S.data.routes).map(([k,r])=>`<label class="tag" style="cursor:pointer"><input type="checkbox" name="rt" value="${k}" ${v.routes.includes(k)?'checked':''}> ${r.label}</label>`).join(' ');
+ const ref=x=>x.t?`<b>turn ${x.t}</b>`:x.q?`“${esc(x.q)}”`:'';
+ const evb=(x,txt)=>`<button class="ev" data-t="${x.t||''}" data-q="${esc(x.q||'')}">${esc(txt)} <span class="mute small">${ref(x)}</span> ${x.ok===false?'<span class="tag bad">not found in text</span>':x.ok?'<span class="tag ok">verified</span>':''}</button>`;
+ let tr='';
+ if(v.turns)tr=v.turns.map((t,i)=>`<div class="turn" id="turn-${i+1}"><b>Turn ${i+1} · ${t.timecode} · ${esc(t.speaker)}</b><br>${esc(t.text)}</div>`).join('');
+ else if(v.text){let h=esc(v.text);const qs=[...(a?[...a.ev,...a.next,...a.coach]:[])].filter(x=>x.q).map(x=>x.q);[...new Set(qs)].forEach((q,i)=>{const e=esc(q);const ix=h.indexOf(e);if(ix>=0)h=h.slice(0,ix)+`<mark data-mq="${esc(q)}">`+e+'</mark>'+h.slice(ix+e.length)});tr=`<div class="box" style="line-height:1.7">${h}</div><p class="small mute">Call text carries no speaker labels or trustworthy timing; evidence is cited by exact quote.</p>`}
+ else tr=`<p class="mute">No usable supplied text. ${esc((v.transcript_payload&&v.transcript_payload.unavailable_reason)||'')}</p>`;
+ const keys=v.type==='call'?['direction','direction_raw','started_at','duration_seconds','talk_time_seconds','speaker_count','is_connected','is_conversation','observed_outcome','classification_status','is_campaign_call','first_dial_ever','first_connect_ever','prior_dials_ever','prior_connects_ever','summary_status','rep_email','from_number','to_number']:['starts_at','ends_at','duration_seconds','provider','organizer_email','attendee_count','recording_status','recording_detail','has_transcript','has_video','summary_status'];
+ $('#drawer').innerHTML=`<button class="x" id="cx">×</button><h2>${v.ref} · ${esc(v.title)}</h2><div>${stTag(v)}${flagTags(v)}<span class="tag">${v.type}</span><span class="tag">rev ${v.revision}</span><span class="tag">${v.time} IST · ${esc(v.person.role)}: ${esc(v.person.label)}</span></div>
+ <div class="box"><b>Route</b> · suggested: ${v.suggested.routes.map(r=>esc(S.data.routes[r].label)).join(' + ')} <span class="mute small">(${esc(v.suggested.by)})</span><br><span class="small">${esc(v.suggested.reason)}</span>
+ ${v.manual?`<br><span class="tag m">manual decision in effect</span> ${v.manual.routes.map(r=>esc(S.data.routes[r].label)).join(' + ')} ${v.manual.note?'· '+esc(v.manual.note):''}`:''}
+ <div style="margin:8px 0">${rt}</div><input type="text" id="rn" placeholder="Why (optional note)" value="${esc(v.manual?v.manual.note:'')}" style="width:100%;margin-bottom:8px"><button class="b" id="rsave">Save manual route</button> ${v.manual?'<button class="b s" id="rreset">Reset to suggested</button>':''}</div>
+ ${a?`<h3>What happened and why it matters</h3><p>${esc(a.what)}</p><p class="small mute">Analysis pre-generated from ${v.type==='call'?'call transcript':'meeting turns'} at source revision ${a.source_revision}; source is now revision ${v.revision} → <b>${v.freshness}</b>.</p>
+ ${a.label?`<div class="box"><b>Source label check</b> · stored <code>${esc(a.label.stored)}</code> → <span class="tag ${a.label.verdict==='supported'?'ok':'w'}">${esc(a.label.verdict)}</span><br>${esc(a.label.why)}</div>`:''}
+ <h3>Evidence (click to locate in text)</h3>${a.ev.map(x=>evb(x,x.say)).join('')}
+ <h3>Next steps · owner only where the text states one</h3>${a.next.map(x=>evb(x,x.do+'  — owner: '+x.owner)).join('')}
+ ${a.coach.length?`<h3>Coaching</h3>${a.coach.map(x=>evb(x,x.c)).join('')}`:''}
+ <h3>What the evidence does not establish</h3><ul>${a.notEstablished.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:`<h3>No current analysis</h3><p>${v.usableText?'Text is present but analysis is missing or stale: human-assisted update needed. The old analysis is not shown as current.':'Nothing to analyse: no usable supplied text. '+esc(v.suggested.reason)}</p>`}
+ ${v.related.length?`<div class="box small"><b>Proposed related record:</b> ${v.related.join(', ')} — same company name in the title only; not a confirmed account match.</div>`:''}
+ <h3>${v.type==='call'?'Call text':'Meeting transcript'}</h3>${tr}
+ <details><summary>Source fields (as received, revision ${v.revision})</summary><table>${keys.map(k=>`<tr><td class="mute">${k}</td><td>${esc(JSON.stringify(p[k]))}</td></tr>`).join('')}</table>${v.type==='meeting'&&v.transcript_payload?`<p class="small">transcript_payload.unavailable_reason: ${esc(JSON.stringify(v.transcript_payload.unavailable_reason))}</p>`:''}</details>
+ <details><summary>Import history</summary><pre>${esc(v.history.map(h=>`${h.batch_id} · rev ${h.revision} · ${h.action}`).join('\n'))}</pre></details>`;
+ $('#drawer').classList.add('open');
+ const locate=(t,q)=>{document.querySelectorAll('.hl').forEach(e=>e.classList.remove('hl'));let el=t?document.getElementById('turn-'+t):[...document.querySelectorAll('mark')].find(m=>m.dataset.mq===q);if(el){el.classList.add('hl');el.scrollIntoView({block:'center',behavior:'smooth'})}};
+ document.querySelectorAll('.ev').forEach(b=>b.onclick=()=>locate(b.dataset.t,b.dataset.q));
+ $('#cx').onclick=()=>{$('#drawer').classList.remove('open');S.sel=null;render()};
+ $('#rsave').onclick=async()=>{const rs=[...document.querySelectorAll('[name=rt]:checked')].map(x=>x.value);try{await refresh(await api('POST','/api/override',{key,routes:rs,note:$('#rn').value}));toast('Manual route saved for '+v.ref);drawer(key)}catch(e){toast(e.message)}};
+ if($('#rreset'))$('#rreset').onclick=async()=>{await refresh(await api('DELETE','/api/override?key='+encodeURIComponent(key)));toast('Manual route reset for '+v.ref);drawer(key)};
+ if(hl)setTimeout(()=>locate(hl.t,hl.q),150);
+}
+
+async function render(){
+ $('#nav').innerHTML=TABS.map(([k,l])=>`<button class="${S.tab===k?'on':''}" data-tab="${k}">${l}</button>`).join('');
+ document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{S.tab=b.dataset.tab;render()});
+ const v=$('#view');
+ v.innerHTML=S.tab==='dash'?dash():S.tab==='inbox'?(S.data.records.length?inbox():dash()):S.tab==='brief'?await brief():S.tab==='ops'?ops():defs();
+ if($('#fp'))bindFilter();
+ v.querySelectorAll('[data-k]').forEach(r=>r.onclick=()=>drawer(r.dataset.k));
+ v.querySelectorAll('[data-p]').forEach(r=>r.onclick=()=>{S.f.person=r.dataset.p;S.f.type=r.dataset.p.startsWith('rep:')?'call':'meeting';S.tab='inbox';refresh(S.data)});
+ v.querySelectorAll('[data-r]').forEach(r=>r.onclick=()=>{S.route=r.dataset.r;S.tab='inbox';render()});
+ v.querySelectorAll('[data-o]').forEach(r=>r.onclick=()=>{const rec=S.data.records.find(x=>x.ref===r.dataset.o);if(rec)drawer(rec.key,{t:r.dataset.t,q:r.dataset.q});else toast('Record not imported yet')});
+ if($('#fr'))$('#fr').onchange=e=>{S.route=e.target.value;render()};
+ if($('#fq'))$('#fq').oninput=e=>{S.q=e.target.value;const p=e.target.selectionStart;render().then?0:0;const n=$('#fq');n.focus();n.setSelectionRange(p,p)};
+ const act=(id,fn)=>{if($(id))$(id).onclick=fn};
+ const imp=async(body,msg)=>{try{const r=await api('POST','/api/import',body);await refresh(r);const i=r.import;toast(`${i.batch_id}: added ${i.added}, replaced ${i.replaced}, ignored ${i.ignored} → ${i.totalRecords} unique records`)}catch(e){toast(e.message)}};
+ act('#demo',async()=>{await refresh(await api('POST','/api/demo'));toast('Loaded initial + update: 44 unique records, 18 usable texts')});
+ act('#i1',()=>imp({file:'initial'}));act('#i1s',()=>imp({file:'initial',shuffle:true}));act('#i2',()=>imp({file:'update'}));
+ act('#rs',async()=>{if(confirm('Clear all imported data and manual routes?')){S.exp=null;await refresh(await api('POST','/api/reset'));toast('Clean start')}});
+ act('#ex',async()=>{S.exp=await api('POST','/api/export');render();toast('Export written to '+S.exp.dir)});
+ if($('#fi'))$('#fi').onchange=async e=>{try{imp({envelope:JSON.parse(await e.target.files[0].text())})}catch{toast('Not valid JSON')}};
+}
+refresh();
+</script></body></html>

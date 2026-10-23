@@ -1,0 +1,45 @@
+record_ref,source_type,source_id,applied_source_revision,suggested_routes,active_routes,manual_override,processing_review_state,analysis_freshness,output_paths
+B01,call,4868e5cd-5ab8-581c-a0e4-acc37385f0cf,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B02,call,5747e4cd-e24f-5bed-bf74-9e3f326b2d77,1,review,review,false,needs_review,n/a (no text),routes/review/B02__5747e4cd__review-item.md
+B03,call,024caffc-d16e-5843-b325-682dbc8d448e,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B04,call,530207ea-d67b-521a-8085-bdb9ae665417,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B05,call,903641e9-d761-591a-a149-334ddfcd236e,1,review,review,false,needs_review,n/a (no text),routes/review/B05__903641e9__review-item.md
+B06,call,53f61c95-27b9-50c2-8755-08f957594950,1,review,review,false,needs_review,n/a (no text),routes/review/B06__53f61c95__review-item.md
+B07,call,f9be8537-1ad9-58fc-be24-78f73d09db9c,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B08,call,77350513-913c-5fed-b4e6-71009de9df03,1,review,review,false,needs_review,n/a (no text),routes/review/B08__77350513__review-item.md
+B09,call,747390bc-f359-5609-bf79-0a44ef8919bd,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B10,call,3ea930a1-0496-51e3-9dca-adc3be29331a,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B11,call,bfefcb48-1a98-5610-a0ee-0f03434188a9,1,review,review,false,needs_review,n/a (no text),routes/review/B11__bfefcb48__review-item.md
+B12,call,9a64eb58-d462-5a6e-aa9e-c0f88852ebe0,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B13,call,6521ed7d-53fc-5b3b-be77-7d4610c90ed7,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B14,call,81da63f4-eac6-5efd-95e1-69ad6e6def25,1,review,review,false,needs_review,n/a (no text),routes/review/B14__81da63f4__review-item.md
+B15,call,2ada5ab0-8a84-54b7-a071-cd5bd6ad5abd,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B16,call,1f5181ed-4175-5d73-a16b-01d404b1820d,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B17,call,1645d595-1896-5201-9395-cb8a9f1c5f3a,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B18,call,26c3ccc3-63a6-55f6-a5a3-e279b36b7e88,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B19,call,6ee11c0e-c74a-5805-b552-657443378b72,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+B20,call,94b4f015-b243-5b89-b435-9957125ecdd4,1,log,log,false,logged_no_text,n/a (no text),routes/log/intake-log.csv
+C01,call,2ec4404c-beee-5377-a63c-aab701da08ed,1,closed;coaching,closed;coaching,false,analysed,current,routes/closed/C01__2ec4404c__closed-note.md;routes/coaching/C01__2ec4404c__coaching.md
+C02,call,4b870624-8aad-5315-a60e-0db95981cf99,1,log,log,false,analysed,current,routes/log/intake-log.csv
+C03,call,20d509ba-d589-5334-9aef-ea4ce6105b1a,1,deal,deal,false,analysed,current,routes/deal/C03__20d509ba__next-steps.md
+C04,call,bcdcbf56-d338-5c78-9a97-42c2fc1c9931,1,deal,deal,false,analysed,current,routes/deal/C04__bcdcbf56__next-steps.md
+C05,call,75a6b94f-7717-5cfb-9e41-0acc94415e17,1,deal;coaching,deal;coaching,false,analysed,current,routes/deal/C05__75a6b94f__next-steps.md;routes/coaching/C05__75a6b94f__coaching.md
+C06,call,12216d5c-e254-52c6-b344-47de4c6e1ae5,1,closed;coaching,closed;coaching,false,analysed,current,routes/closed/C06__12216d5c__closed-note.md;routes/coaching/C06__12216d5c__coaching.md
+C07,call,428817fa-7e9e-5418-a7d4-bb396d28dfbf,1,partner,partner,false,analysed,current,routes/partner/C07__428817fa__partner-note.md
+C08,call,129497b2-8e1d-5e01-919c-e8a852b5ff68,1,deal,deal,false,analysed,current,routes/deal/C08__129497b2__next-steps.md
+C09,call,4a1de681-f884-55e8-b1ad-de22d17cd959,1,deal,deal,false,analysed,current,routes/deal/C09__4a1de681__next-steps.md
+C10,call,b747f592-810e-583c-9b81-8db5ab035806,1,deal;coaching,deal;coaching,false,analysed,current,routes/deal/C10__b747f592__next-steps.md;routes/coaching/C10__b747f592__coaching.md
+M01,meeting,cb5cecac-e68d-52b7-b10b-b0c748efc467,1,partner;coaching,partner;coaching,false,analysed,current,routes/partner/M01__cb5cecac__partner-note.md;routes/coaching/M01__cb5cecac__coaching.md
+M02,meeting,1a21c409-c050-5787-90af-2667e057e1b6,1,internal,internal,false,analysed,current,routes/internal/M02__1a21c409__internal-note.md
+M03,meeting,398672e7-62dd-5afd-846d-0237d49792fb,1,deal;coaching,deal;coaching,false,analysed,current,routes/deal/M03__398672e7__next-steps.md;routes/coaching/M03__398672e7__coaching.md
+M04,meeting,b0f79b3d-37ba-52f9-b2bc-58b159dd6d91,1,cs;deal,cs;deal,false,analysed,current,routes/cs/M04__b0f79b3d__customer-issues.md;routes/deal/M04__b0f79b3d__next-steps.md
+M05,meeting,e0ecb112-ed94-5e8e-ae71-19def5536337,1,review,review,false,needs_review,n/a (no text),routes/review/M05__e0ecb112__review-item.md
+M06,meeting,657b9e9d-9472-5b01-a127-a648ad7e8cf7,1,deal;coaching,deal;coaching,false,analysed,current,routes/deal/M06__657b9e9d__next-steps.md;routes/coaching/M06__657b9e9d__coaching.md
+M07,meeting,4f304fff-fd40-5cfc-a366-0a134c445c2a,2,cs,cs;internal,true,analysed,current,routes/cs/M07__4f304fff__customer-issues.md;routes/internal/M07__4f304fff__internal-note.md
+M08,meeting,883182d8-eb86-56f9-a928-152365998d15,1,review,review,false,needs_review,n/a (no text),routes/review/M08__883182d8__review-item.md
+M09,meeting,4b5b9192-f3fc-505a-8e77-4d2ffaa54594,1,cs,cs,false,analysed,current,routes/cs/M09__4b5b9192__customer-issues.md
+M10,meeting,337f297d-9385-5b82-9e54-5019c1ed912c,1,internal,internal,false,analysed,current,routes/internal/M10__337f297d__internal-note.md
+M11,meeting,fc651475-187c-5882-a644-b501408e8647,1,review,review,false,needs_review,n/a (no text),routes/review/M11__fc651475__review-item.md
+M12,meeting,c759b921-e9d3-540c-a06b-474c5710342d,1,review,review,false,needs_review,n/a (no text),routes/review/M12__c759b921__review-item.md
+M13,meeting,794a9d1c-889d-5957-873f-8a1271b03455,1,review,review,false,needs_review,n/a (no text),routes/review/M13__794a9d1c__review-item.md
+M14,meeting,93f4867d-65cd-5236-bc55-7bd57df8ac24,1,review,review,false,needs_review,n/a (no text),routes/review/M14__93f4867d__review-item.md
